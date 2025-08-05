@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.cache/
+*.sqlite3
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VSCode
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Python virtual environment (pipenv, poetry)
+Pipfile.lock
+poetry.lock
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# LangChain specific
+*.json  # caso você salve respostas temporárias
+*.yaml  # se estiver usando agentes com arquivos config temporários
+*.db    # caso use algum tipo de armazenamento local
+
+# Secrets
+*.env
+.env.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
