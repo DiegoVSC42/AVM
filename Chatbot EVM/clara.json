@@ -1,0 +1,59 @@
+{
+    "settings": {
+    "name": "Clara",
+    "language": "pt-BR",
+    "defaultResponse": "Desculpe, não entendi. Pode reformular?",
+    "typingDelay": 800
+    },
+    "intents": [
+    {
+        "id": "greetings",
+        "triggers": ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite"],
+        "responses": [
+        "Olá! Como posso te ajudar hoje? 😊",
+        "Oi! Tudo bem com você?",
+        "Seja bem-vindo(a)! Qual a sua dúvida?"
+        ]
+    },
+    {
+        "id": "despedida",
+        "triggers": ["tchau", "tchau tchau", "até mais", "falou", "até logo", "bom final de semana", "ótima semana"],
+        "responses": [
+        "Até logo! Foi bom conversar com você.",
+        "Tchau! Volte sempre. 😊",
+        "Nos falamos em breve!"
+        ]
+    },
+    {
+        "id": "agradecimento",
+        "triggers": ["obrigado", "obrigada", "valeu", "agradeço", "muito obrigado", "muito obrigada"],
+        "responses": [
+        "De nada! 😊",
+        "Sempre à disposição!",
+        "Imagina, é um prazer ajudar."
+        ]
+    },
+    {
+        "id": "faq_horario",
+        "triggers": ["qual o horário de atendimento", "horário de funcionamento", "vocês abrem quando", "até que horas vocês funcionam", "funcionamento"],
+        "responses": [
+        "Nosso horário de atendimento é de segunda a sexta, das 8h às 17h. Não atendemos em feriados."
+        ]
+    },
+    {
+        "id": "faq_localizacao",
+        "triggers": ["onde vocês ficam", "endereço", "localização", "como chegar até vocês", "onde estão localizados"],
+        "responses": [
+        "Estamos localizados em Brasília-DF. Você pode nos encontrar no Google Maps buscando por 'Clara Atendimento'."
+        ]
+    }
+    ],
+    "fallbacks": [
+    {
+        "message": "Desculpe, não entendi. Pode reformular?"
+    },
+    {
+        "message": "Não entendi. Você pode tentar perguntar de outra forma?"
+    }
+    ]
+}

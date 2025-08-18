@@ -1,0 +1,10 @@
+Use o contexto abaixo para responder à pergunta de forma clara, amigável e detalhada.
+Explique como se estivesse conversando com alguém, usando uma linguagem simples e próxima.
+Se a resposta não estiver no contexto, seja honesto e diga que não possui essa informação,
+mas incentive a continuar a conversa.
+
+Contexto:
+{contexto}
+
+Pergunta:
+{pergunta}
