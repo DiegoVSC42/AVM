@@ -30,9 +30,9 @@ Evite parágrafos longos.
 
 # --- adicione estes controles de "tom WhatsApp" ---
 WHATSAPP_MODE = True
-MAX_LINES = 4  # máx. de linhas por resposta
-MAX_CHARS_PER_LINE = 95  # máx. de caracteres por linha
-SHOW_SOURCES = 2  # quantas fontes mostrar no final (0 = ocultar)
+MAX_LINES = 5  # máx. de linhas por resposta
+MAX_CHARS_PER_LINE = 0  # máx. de caracteres por linha
+SHOW_SOURCES = 0  # quantas fontes mostrar no final (0 = ocultar)
 
 # ================= DOCUMENTOS / TOOLS =================
 # Cada item vira uma tool de RAG
@@ -40,6 +40,11 @@ DOCS = [
     {
         "name": "comunicacao_mandato",
         "path": os.path.join("docs", "Comunicacao_Mandato_Vereadores.pdf"),
+        "persist": True,  # salva/recupera índice em ./indices/<name>
+    },
+    {
+        "name": "perguntas_frequentes",
+        "path": os.path.join("docs", "Perguntas Frequentes - Eu Vereador.pdf"),
         "persist": True,  # salva/recupera índice em ./indices/<name>
     },
     # Adicione novos aqui:
