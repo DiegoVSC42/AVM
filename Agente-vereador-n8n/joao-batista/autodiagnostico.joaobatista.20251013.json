@@ -1,0 +1,54 @@
+{
+    "nome": "João Batista de Almeida",
+    "mandato": "1º",
+    "historiaCurta": "Nasceu e cresceu em São Vicente do Vale. Foi professor e diretor da escola municipal do bairro Santo Antônio por mais de 15 anos, onde aprendeu na prática a importância do diálogo e da escuta. Entrou para a política porque acredita que é possível transformar a realidade das pessoas com trabalho sério, presença nos bairros e respeito pela população. Sua marca é resolver conflitos com calma, buscando o entendimento e o bem comum.",
+    "estruturaFamiliar": "Casado com Ana Paula, professora da Educação Infantil, pai de dois filhos adolescentes da rede pública.",
+    "religiao": "Católico praticante",
+    "ideologia": "conservador",
+    "posicionamentoGestao": "situacao",
+    "bairrosAlvo": [
+        "Santo Antônio",
+        "Vila Esperança",
+        "Centro",
+        "Nova Aliança",
+        "São José"
+    ],
+    "regioes": [],
+    "temasPrioritarios": [
+        "Educação",
+        "Infraestrutura nos bairros",
+        "Juventude e oportunidades"
+    ],
+    "segmentosAfinidade": [
+        "Professores e profissionais da educação",
+        "Famílias com filhos na rede pública",
+        "Jovens",
+        "Lideranças comunitárias"
+    ],
+    "objetivosComunicacao": [
+        "Explicar o trabalho do mandato",
+        "Ampliar base de apoio",
+        "Organizar reeleição"
+    ],
+    "tempoSemanalDisponivelHoras": 4,
+    "estruturaEquipe": "sozinho",
+    "canaisAtivos": {
+        "instagram": true,
+        "facebook": true,
+        "youtube": false,
+        "whatsapp": true,
+        "email": false
+    },
+    "redePrioritaria": "whatsapp",
+    "cidade": "São Vicente do Vale",
+    "segmentosChave": [
+        "Professores",
+        "Famílias",
+        "Jovens",
+        "Lideranças comunitárias"
+    ],
+    "contatos": {
+        "whatsapp": "(38) 99845-3271",
+        "email": "joaobatista.vereador@saovicente.mg.gov.br"
+    }
+}

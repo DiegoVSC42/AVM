@@ -1,0 +1,150 @@
+{
+    "$id": "autodiagnostico.schema.json",
+    "type": "object",
+    "required": [
+        "nome",
+        "mandato",
+        "ideologia",
+        "posicionamentoGestao",
+        "bairrosAlvo",
+        "temasPrioritarios",
+        "cidade"
+    ],
+    "properties": {
+        "nome": {
+            "type": "string"
+        },
+        "mandato": {
+            "type": "string",
+            "enum": [
+                "1º",
+                "reeleição"
+            ]
+        },
+        "historiaCurta": {
+            "type": "string"
+        },
+        "estruturaFamiliar": {
+            "type": "string"
+        },
+        "religiao": {
+            "type": "string"
+        },
+        "ideologia": {
+            "type": "string",
+            "enum": [
+                "liberal",
+                "social",
+                "conservador",
+                "indefinida"
+            ]
+        },
+        "posicionamentoGestao": {
+            "type": "string",
+            "enum": [
+                "oposicao",
+                "situacao",
+                "neutro"
+            ]
+        },
+        "bairrosAlvo": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "regioes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "temasPrioritarios": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+                "type": "string"
+            }
+        },
+        "segmentosAfinidade": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "objetivosComunicacao": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "tempoSemanalDisponivelHoras": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "estruturaEquipe": {
+            "type": "string",
+            "enum": [
+                "sozinho",
+                "1",
+                "2-3",
+                ">3"
+            ]
+        },
+        "canaisAtivos": {
+            "type": "object",
+            "properties": {
+                "instagram": {
+                    "type": "boolean"
+                },
+                "facebook": {
+                    "type": "boolean"
+                },
+                "youtube": {
+                    "type": "boolean"
+                },
+                "whatsapp": {
+                    "type": "boolean"
+                },
+                "email": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": false
+        },
+        "redePrioritaria": {
+            "type": "string",
+            "enum": [
+                "instagram",
+                "facebook",
+                "youtube",
+                "whatsapp",
+                "email"
+            ]
+        },
+        "cidade": {
+            "type": "string"
+        },
+        "segmentosChave": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "contatos": {
+            "type": "object",
+            "properties": {
+                "whatsapp": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

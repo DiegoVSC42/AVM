@@ -1,0 +1,32 @@
+{
+    "frequenciaPublicacaoSemanalPorRede": {
+        "instagram": 1,
+        "facebook": 1,
+        "youtube": 0,
+        "whatsapp": 1,
+        "email": 0
+    },
+    "planejaConteudoSemanal": false,
+    "respondeComentariosPercentual": 40,
+    "tempoMedioRespostaComentariosHoras": 12,
+    "interacaoComOutrosPerfis": true,
+    "integracaoEntreCanais": false,
+    "provaTrabalhoPublicada": {
+        "votacoes": false,
+        "requerimentos": false,
+        "fiscalizacoes": true,
+        "emendas": false,
+        "prestacaoContas": false
+    },
+    "prestacaoContasRecorrente": false,
+    "bibliotecaMidia": {
+        "fotosBoas": true,
+        "videosBroll": false,
+        "vinhetas": false
+    },
+    "basePropria": {
+        "whatsappContatos": 180,
+        "emailContatos": 0
+    },
+    "padroesVisuaisConsistentes": false
+}

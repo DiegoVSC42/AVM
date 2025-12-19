@@ -1,0 +1,11 @@
+target_url = "https://chat.openai.com"
+always_on_top = false
+full_screen = false
+height = 800
+width = 1280
+hide_window_frame = false
+show_menu_bar = false
+max_width = 1920
+max_height = 1080
+min_width = 800
+min_height = 600

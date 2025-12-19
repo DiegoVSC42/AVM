@@ -1,0 +1,1136 @@
+{
+    "name": "Gerador de Ficha Técnica - Completo",
+    "nodes": [
+        {
+            "parameters": {
+                "formTitle": "Gerador de Ficha Técnica",
+                "formDescription": "Vamos criar a ficha técnica completa do seu curso. Responda todas as perguntas com o máximo de detalhes possíveis.",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "Qual o nome do curso?",
+                            "fieldType": "text",
+                            "requiredField": true,
+                            "placeholder": "Ex: Comunicação para Governos e Instituições"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.formTrigger",
+            "typeVersion": 2.3,
+            "position": [
+                0,
+                0
+            ],
+            "id": "dfc2130b-0a64-4eb2-8e97-375b74c28d65",
+            "name": "Início",
+            "webhookId": "b1e2c757-fab8-4f85-a75a-0f36264b723f"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 1) Identificação do Curso",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Nome do curso (nome oficial)",
+                            "fieldType": "text",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "2. Tipo de curso",
+                            "fieldType": "dropdown",
+                            "requiredField": true,
+                            "fieldOptions": {
+                                "values": [
+                                    {
+                                        "option": "Preparatório ao vivo"
+                                    },
+                                    {
+                                        "option": "Imersão"
+                                    },
+                                    {
+                                        "option": "Workshop"
+                                    },
+                                    {
+                                        "option": "Masterclass"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "fieldLabel": "3. Qual o objetivo principal do curso? (o que os participantes aprenderão)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "4. Escopo da metodologia (do que até o que engloba)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                200,
+                0
+            ],
+            "id": "bloco1",
+            "name": "Bloco 1",
+            "webhookId": "bloco1-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 2) Logística e Estrutura",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Datas completas de realização (dia, mês e ano)",
+                            "fieldType": "text",
+                            "requiredField": true,
+                            "placeholder": "Ex: 15, 16 e 17 de março de 2025"
+                        },
+                        {
+                            "fieldLabel": "2. Local completo (nome do espaço)",
+                            "fieldType": "text",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "3. Endereço completo (rua, número, bairro, cidade, estado, CEP)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "4. Horário detalhado (início, término, intervalos)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "5. Número de vagas presenciais",
+                            "fieldType": "number",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "6. Número de vagas online (ou escreva 'ilimitadas')",
+                            "fieldType": "text",
+                            "requiredField": true
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                400,
+                0
+            ],
+            "id": "bloco2",
+            "name": "Bloco 2",
+            "webhookId": "bloco2-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 3) Atendimento e Comunicação",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. WhatsApp de atendimento",
+                            "fieldType": "text",
+                            "requiredField": true,
+                            "placeholder": "Ex: (61) 99999-9999"
+                        },
+                        {
+                            "fieldLabel": "2. E-mail de contato",
+                            "fieldType": "email",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "3. Página de vendas (URL)",
+                            "fieldType": "text",
+                            "requiredField": true,
+                            "placeholder": "https://"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                600,
+                0
+            ],
+            "id": "bloco3",
+            "name": "Bloco 3",
+            "webhookId": "bloco3-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 4) Conteúdo Programático",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Quais serão os módulos/dias do curso? (título de cada módulo)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste cada módulo/dia separadamente"
+                        },
+                        {
+                            "fieldLabel": "2. Para cada módulo, liste os principais tópicos abordados",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Organize por módulo e liste os tópicos de cada um"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                800,
+                0
+            ],
+            "id": "bloco4",
+            "name": "Bloco 4",
+            "webhookId": "bloco4-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 5) Resultados e Impacto",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Após o curso, que transformação o participante terá? (descreva os resultados esperados detalhadamente)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Descreva em detalhes as transformações e resultados que o participante alcançará"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                1000,
+                0
+            ],
+            "id": "bloco5",
+            "name": "Bloco 5",
+            "webhookId": "bloco5-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 6) Análise de Mercado",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Contexto do mercado (como está o cenário de cursos similares)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "2. Existem concorrentes diretos?",
+                            "fieldType": "dropdown",
+                            "requiredField": true,
+                            "fieldOptions": {
+                                "values": [
+                                    {
+                                        "option": "Sim"
+                                    },
+                                    {
+                                        "option": "Não"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "fieldLabel": "3. Se sim, liste os concorrentes (Nome, Modalidade, Duração, Carga horária, URL, Pontos fortes, Valores praticados, Pontos fracos)",
+                            "fieldType": "textarea",
+                            "requiredField": false,
+                            "placeholder": "Liste cada concorrente com todos os detalhes solicitados"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                1200,
+                0
+            ],
+            "id": "bloco6",
+            "name": "Bloco 6",
+            "webhookId": "bloco6-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 7) Diferenciais",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Quais são os principais diferenciais deste curso em relação aos concorrentes? (liste todos)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste todos os diferenciais, um por linha"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                1400,
+                0
+            ],
+            "id": "bloco7",
+            "name": "Bloco 7",
+            "webhookId": "bloco7-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 8) Valores e Formas de Pagamento",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Formas de pagamento aceitas (boleto, pix, parcelamento)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "2. Valor da modalidade presencial",
+                            "fieldType": "text",
+                            "requiredField": true,
+                            "placeholder": "Ex: R$ 1.500,00"
+                        },
+                        {
+                            "fieldLabel": "3. Valor da modalidade online",
+                            "fieldType": "text",
+                            "requiredField": true,
+                            "placeholder": "Ex: R$ 800,00"
+                        },
+                        {
+                            "fieldLabel": "4. Valor da modalidade presencial + gravação (se houver)",
+                            "fieldType": "text",
+                            "requiredField": false,
+                            "placeholder": "Ex: R$ 2.000,00"
+                        },
+                        {
+                            "fieldLabel": "5. Observações sobre compra (ex: nota de empenho)",
+                            "fieldType": "textarea",
+                            "requiredField": false
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                1600,
+                0
+            ],
+            "id": "bloco8",
+            "name": "Bloco 8",
+            "webhookId": "bloco8-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 9) Modalidades - O que está Incluído",
+                "formDescription": "Para cada modalidade, indique o que está incluído",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "Modalidade Presencial - O que está incluído?",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Indique: Transmissão ao vivo? Gravação? WhatsApp? Kit? Área do aluno? Materiais impressos? PDFs? Coffee break? Certificado?"
+                        },
+                        {
+                            "fieldLabel": "Modalidade Online - O que está incluído?",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Indique: Transmissão ao vivo? Gravação? WhatsApp? Kit? Área do aluno? Materiais impressos? PDFs? Coffee break? Certificado?"
+                        },
+                        {
+                            "fieldLabel": "Modalidade Presencial + Gravação - O que está incluído? (se houver)",
+                            "fieldType": "textarea",
+                            "requiredField": false,
+                            "placeholder": "Indique: Transmissão ao vivo? Gravação? WhatsApp? Kit? Área do aluno? Materiais impressos? PDFs? Coffee break? Certificado?"
+                        },
+                        {
+                            "fieldLabel": "Observações adicionais sobre modalidades",
+                            "fieldType": "textarea",
+                            "requiredField": false
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                1800,
+                0
+            ],
+            "id": "bloco9",
+            "name": "Bloco 9",
+            "webhookId": "bloco9-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 10) Política de Reembolso",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Descreva a política de reembolso para cada situação",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Descreva as condições de reembolso (prazo, percentual, situações aplicáveis)"
+                        },
+                        {
+                            "fieldLabel": "2. Observações sobre reembolso",
+                            "fieldType": "textarea",
+                            "requiredField": false
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                2000,
+                0
+            ],
+            "id": "bloco10",
+            "name": "Bloco 10",
+            "webhookId": "bloco10-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 11) Descontos e Pré-venda",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Haverá pré-venda?",
+                            "fieldType": "dropdown",
+                            "requiredField": true,
+                            "fieldOptions": {
+                                "values": [
+                                    {
+                                        "option": "Sim"
+                                    },
+                                    {
+                                        "option": "Não"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "fieldLabel": "2. Se sim, quando será e quais os descontos?",
+                            "fieldType": "textarea",
+                            "requiredField": false
+                        },
+                        {
+                            "fieldLabel": "3. Detalhes da pré-venda",
+                            "fieldType": "textarea",
+                            "requiredField": false
+                        },
+                        {
+                            "fieldLabel": "4. Descontos gerais (grupos, compras múltiplas)",
+                            "fieldType": "textarea",
+                            "requiredField": false
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                2200,
+                0
+            ],
+            "id": "bloco11",
+            "name": "Bloco 11",
+            "webhookId": "bloco11-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 12) Público-Alvo",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Qual o público P0? (principal, prioritário)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Descreva o público principal com o máximo de detalhes"
+                        },
+                        {
+                            "fieldLabel": "2. Quais os públicos secundários? (liste todos)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste todos os públicos secundários"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                2400,
+                0
+            ],
+            "id": "bloco12",
+            "name": "Bloco 12",
+            "webhookId": "bloco12-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 13) Persona",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Nome (fictício)",
+                            "fieldType": "text",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "2. Idade",
+                            "fieldType": "number",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "3. Profissão",
+                            "fieldType": "text",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "4. Localização (cidade)",
+                            "fieldType": "text",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "5. Formação",
+                            "fieldType": "text",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "6. Experiência profissional (liste principais pontos)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "7. Motivações para comprar o curso (liste todas)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "8. Canais de consumo de informação (onde essa pessoa busca conteúdo)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                2600,
+                0
+            ],
+            "id": "bloco13",
+            "name": "Bloco 13",
+            "webhookId": "bloco13-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 14) Dores e Desejos",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Quais são as principais dores desse público? (liste todas)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste todas as dores, uma por linha"
+                        },
+                        {
+                            "fieldLabel": "2. Quais são os principais desejos desse público? (liste todos)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste todos os desejos, um por linha"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                2800,
+                0
+            ],
+            "id": "bloco14",
+            "name": "Bloco 14",
+            "webhookId": "bloco14-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 15) Problemas Resolvidos",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Para cada problema que o curso resolve, indique: Título do problema e Como o curso resolve",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste cada problema e sua respectiva solução fornecida pelo curso"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                3000,
+                0
+            ],
+            "id": "bloco15",
+            "name": "Bloco 15",
+            "webhookId": "bloco15-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 16) Tentativas Frustradas",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. O que esse público já tentou fazer para resolver o problema e não conseguiu?",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Para cada tentativa, descreva o título e a descrição"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                3200,
+                0
+            ],
+            "id": "bloco16",
+            "name": "Bloco 16",
+            "webhookId": "bloco16-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 17) Gatilhos Emocionais",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Quais gatilhos emocionais podem ser usados? Para cada gatilho, indique: Tipo do gatilho (urgência, autoridade, prova social, etc) e Como usar este gatilho",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste cada gatilho com seu tipo e forma de aplicação"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                3400,
+                0
+            ],
+            "id": "bloco17",
+            "name": "Bloco 17",
+            "webhookId": "bloco17-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 18) Promessa e Valor",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Qual a promessa principal do curso? (em uma frase)",
+                            "fieldType": "text",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "2. Introdução sobre valor (contexto geral)",
+                            "fieldType": "textarea",
+                            "requiredField": true
+                        },
+                        {
+                            "fieldLabel": "3. Elementos que aumentam a percepção de valor (Título e Descrição de cada elemento)",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste cada elemento com título e descrição"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                3600,
+                0
+            ],
+            "id": "bloco18",
+            "name": "Bloco 18",
+            "webhookId": "bloco18-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 19) Tom e Estilo de Comunicação",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Para cada característica do tom, descreva: Característica (ex: autoridade sem arrogância) e Como aplicar essa característica",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste cada característica e sua forma de aplicação"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                3800,
+                0
+            ],
+            "id": "bloco19",
+            "name": "Bloco 19",
+            "webhookId": "bloco19-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 20) Metas de Venda",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Meta mínima de vendas online",
+                            "fieldType": "number",
+                            "requiredField": true,
+                            "placeholder": "Quantidade de vagas"
+                        },
+                        {
+                            "fieldLabel": "2. Meta mínima de vendas presencial",
+                            "fieldType": "number",
+                            "requiredField": true,
+                            "placeholder": "Quantidade de vagas"
+                        },
+                        {
+                            "fieldLabel": "3. Meta mínima de vendas presencial + gravação",
+                            "fieldType": "number",
+                            "requiredField": false,
+                            "placeholder": "Quantidade de vagas"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                4000,
+                0
+            ],
+            "id": "bloco20",
+            "name": "Bloco 20",
+            "webhookId": "bloco20-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 21) Objeções e Respostas",
+                "formDescription": "Responda aos itens abaixo de forma clara e objetiva, com o máximo de detalhes possíveis",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "1. Para cada objeção comum, forneça: Título da objeção e Resposta completa para tratar a objeção",
+                            "fieldType": "textarea",
+                            "requiredField": true,
+                            "placeholder": "Liste cada objeção com sua respectiva resposta"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                4200,
+                0
+            ],
+            "id": "bloco21",
+            "name": "Bloco 21",
+            "webhookId": "bloco21-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "appendToUrl",
+                "formTitle": "Bloco 22) Observações Finais",
+                "formDescription": "Esse espaço é livre para comentários, pendências ou anotações (opcional)",
+                "formFields": {
+                    "values": [
+                        {
+                            "fieldLabel": "Observações finais, comentários ou pendências",
+                            "fieldType": "textarea",
+                            "requiredField": false,
+                            "placeholder": "Adicione qualquer informação adicional relevante"
+                        }
+                    ]
+                },
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                4400,
+                0
+            ],
+            "id": "bloco22",
+            "name": "Bloco 22",
+            "webhookId": "bloco22-webhook"
+        },
+        {
+            "parameters": {
+                "operation": "completion",
+                "completionTitle": "Ficha Técnica Completa!",
+                "completionMessage": "Obrigado! Todas as informações foram coletadas com sucesso. Sua ficha técnica está completa e será processada.",
+                "options": {}
+            },
+            "type": "n8n-nodes-base.form",
+            "typeVersion": 2.3,
+            "position": [
+                4600,
+                0
+            ],
+            "id": "2e3d77bd-4415-4d43-a0c9-6e6c08e4ccbd",
+            "name": "Conclusão",
+            "webhookId": "919c4961-4ec5-4af3-95ab-962c1a737225"
+        }
+    ],
+    "pinData": {},
+    "connections": {
+        "Início": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 1",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 1": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 2",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 2": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 3",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 3": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 4",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 4": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 5",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 5": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 6",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 6": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 7",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 7": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 8",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 8": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 9",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 9": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 10",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 10": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 11",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 11": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 12",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 12": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 13",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 13": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 14",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 14": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 15",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 15": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 16",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 16": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 17",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 17": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 18",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 18": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 19",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 19": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 20",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 20": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 21",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 21": {
+            "main": [
+                [
+                    {
+                        "node": "Bloco 22",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "Bloco 22": {
+            "main": [
+                [
+                    {
+                        "node": "Conclusão",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "active": true,
+    "settings": {
+        "executionOrder": "v1"
+    },
+    "versionId": "4de48cef-7225-49d6-b935-75358d2ed084",
+    "meta": {
+        "instanceId": "bc532382dacdb14864cdb0f22943e30f62716d3e5f24bc6833ab754e3038c466"
+    },
+    "id": "MhIYbKJPEmGSuCSS",
+    "tags": []
+}

@@ -1,0 +1,142 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{\textbf{Relatório sobre consumo de APIs}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{IBGE}
+
+Essa API basicamente serve para extrair dados categóricos e numéricos sobre varias coisas relacionadas ao Brasil. Nessa API é possível pesquisar coisas como
+
+\subsection{Censos e Contagens Populacionais}
+\textit{Censo Demográfico, Contagem da População, Censo Comum do Mercosul, Estimativas e Projeção da População}
+
+\textbf{Dados:} tamanho populacional, idade, renda, escolaridade, moradia por região/município.
+
+\textbf{Uso:} planejamento urbano, repasses federais, estudos de mercado, projeção de demanda.
+
+\subsection{Índices de Preços}
+\textit{INPC, INPC-E, IPCA, IPCA-15, IPCA-E, Índice de Reajuste do Salário Mínimo, IPP, Preços ao Consumidor em Real, SINAPI}
+
+\textbf{Dados:} variação de preços ao consumidor, produtor e construção civil.
+
+\textbf{Uso:} correção de contratos, reajuste salarial, política monetária, precificação.
+
+\subsection{Contas Nacionais e PIB}
+\textit{Contas Nacionais Anuais, Trimestrais, PIB dos Municípios}
+
+\textbf{Dados:} crescimento econômico, PIB setorial, consumo, investimento.
+
+\textbf{Uso:} análise macroeconômica, decisões de investimento, comparação regional.
+
+\subsection{Pesquisas Industriais}
+\textit{PIA, PIA-Empresa, PIA-Produto, PIM Produção Física, PIM Dados Gerais, PIM Emprego e Salário}
+
+\textbf{Dados:} produção, receita, custos, emprego e salários industriais (mensal e anual).
+
+\textbf{Uso:} análise de competitividade, tendências setoriais, planejamento de produção.
+
+\subsection{Comércio e Serviços}
+\textit{PAC, PAS, PMC, PMS, Pesquisas de Hospedagem, Publicidade, TI}
+
+\textbf{Dados:} receita, pessoal ocupado, custos do comércio e serviços.
+
+\textbf{Uso:} dimensionamento de mercado, análise de consumo, estratégias comerciais.
+
+\subsection{Produção Agrícola}
+\textit{PAM, LSPA, Produção de Ovos, Extração Vegetal e Silvicultura}
+
+\textbf{Dados:} área plantada, produtividade, safras por cultura e município.
+
+\textbf{Uso:} planejamento de safras, precificação agrícola, seguro rural.
+
+\subsection{Produção Pecuária}
+\textit{PPM, Abate de Animais (trimestral/mensal), Leite (trimestral/mensal), Couro}
+
+\textbf{Dados:} rebanhos, abate, produção de leite e couro.
+
+\textbf{Uso:} planejamento frigorífico, formação de preços de carne/leite, políticas pecuárias.
+
+\subsection{Censo e Estudos Agropecuários}
+\textit{Censo Agropecuário, Contribuição dos Polinizadores}
+
+\textbf{Dados:} estrutura fundiária, tecnologias agrícolas, dependência de polinização.
+
+\textbf{Uso:} políticas agrárias, extensão rural, valoração ambiental.
+
+\subsection{Contas Ambientais}
+\textit{Contas de Ecossistemas, Água, Terra, Energia (biomassa), Espécies Ameaçadas}
+
+\textbf{Dados:} uso de recursos naturais, impactos ambientais das atividades econômicas.
+
+\textbf{Uso:} sustentabilidade, políticas de conservação, economia verde.
+
+\subsection{Saúde}
+\textit{PNS, PNS Escolar, Assistência Médico-Sanitária}
+
+\textbf{Dados:} doenças, hábitos de saúde, infraestrutura hospitalar.
+
+\textbf{Uso:} políticas de saúde pública, planejamento hospitalar.
+
+\subsection{Pesquisas Domiciliares e Emprego}
+\textit{PNAD, PNAD Contínua (mensal/trimestral/anual), POF, PME}
+
+\textbf{Dados:} emprego, renda, desemprego, gastos familiares.
+
+\textbf{Uso:} políticas trabalhistas, análise de mercado consumidor, segmentação.
+
+\subsection{Empresas e Empreendedorismo}
+\textit{CEMPRE, Demografia das Empresas, MEI, FASFIL}
+
+\textbf{Dados:} nascimento/morte de empresas, perfil empresarial, ONGs.
+
+\textbf{Uso:} análise de ambiente de negócios, políticas de fomento.
+
+\subsection{Pesquisas Municipais e Infraestrutura}
+\textit{MUNIC, Saneamento Básico, Estatísticas do Registro Civil}
+
+\textbf{Dados:} gestão municipal, saneamento, nascimentos, casamentos, óbitos.
+
+\textbf{Uso:} políticas públicas locais, planejamento de infraestrutura.
+
+\subsection{Inovação e Estoques}
+\textit{PINTEC, Pesquisa de Estoques}
+
+\textbf{Dados:} inovação tecnológica empresarial, níveis de estoque.
+
+\textbf{Uso:} políticas de P\&D, gestão de cadeia de suprimentos.
+
+\subsection{Construção Civil}
+\textit{PAIC, SINAPI}
+
+\textbf{Dados:} receita, custos, emprego na construção, índices de custos.
+
+\textbf{Uso:} análise do setor imobiliário, orçamentos de obras.
+
+\subsection{Sustentabilidade}
+\textit{IDS, ODS, Áreas Urbanizadas}
+
+\textbf{Dados:} indicadores socioambientais, avanço nas metas ONU, expansão urbana.
+
+\textbf{Uso:} monitoramento de desenvolvimento sustentável, planejamento territorial.
+
+
+
+
+
+\end{document}

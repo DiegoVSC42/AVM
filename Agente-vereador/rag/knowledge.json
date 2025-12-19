@@ -1,0 +1,37 @@
+Extraia do seu acervo (ex.: Eu Vereador) trechos de 600–1.200 caracteres sobre: atribuições do vereador, boas práticas de fiscalização, modelos de prestação de contas, etc.
+Cada linha é um JSON: {
+    "id": "cap1-atribuicoes-001",
+    "source": "eu-vereador",
+    "city": "*",
+    "tags": [
+        "atribuicoes"
+    ],
+    "text": "Resumo das funções: legislar, fiscalizar, orçamento e interlocução..."
+}
+
+
+Use city: "*" para conteúdo geral e city: "Goiânia" para algo local.
+
+
+
+Fluxo de 1º uso (passo a passo)
+Pergunta inicial: cidade e bairros.
+Rodar wizard de autodiagnóstico (e auditoria, se quiser).
+Validar com os schemas e gerar autodiagnostico.json, auditoria.json, perfil_completo.json.
+Gerar 2 peças de teste:
+Post (votação/fiscalização) com PAS-I-CTA.
+Página/vídeo (versão intenção) com “Informação → Você tem a ver → Ganhos/Perdas → CTA”.
+Revisar com checklists e ajustar tom/voz.
+
+
+Comandos úteis (para o usuário do agente)
+“Iniciar cadastro do meu perfil.”
+“Minha cidade é {
+    {cidade
+    }
+}. Bairros principais: ….”
+“Importar JSON/CSV do formulário.”
+“Atualizar: ideologia conservador; incluir bairro Setor Sul.”
+“Gerar prestação de contas do mês.”
+“Escrever post sobre fiscalização na UBS do bairro X (PAS-I-CTA).”
+

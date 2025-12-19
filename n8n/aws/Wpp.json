@@ -1,0 +1,504 @@
+{
+  "name": "Wpp",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "aula",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a55886a1-aee3-4a01-84f4-ee02bf863bc9",
+      "name": "Webhook",
+      "webhookId": "6b7239a9-eb86-4c05-bb7a-32d9fea49d69"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ $json.body.jsonData }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "9096f430-1acd-491d-9ca8-704925a19062",
+      "name": "PARSE1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b065143f-b9f5-4e72-a8e5-998cf883ba04",
+              "name": "nome",
+              "value": "={{ $json.event.Info.PushName }}",
+              "type": "string"
+            },
+            {
+              "id": "c708f21e-3b52-4e32-841c-f4e3bb4ac00b",
+              "name": "numero",
+              "value": "={{ $json.event.Info.Sender.split('@')[0].split(':')[0] }}",
+              "type": "string"
+            },
+            {
+              "id": "dfa58ce6-3d57-442b-9242-49eb68d7b67c",
+              "name": "mensagem",
+              "value": "={{ $json.event.Message.extendedTextMessage.text }}",
+              "type": "string"
+            },
+            {
+              "id": "ef1e7673-b5c2-461a-9151-8fa744007ea1",
+              "name": "isGroup",
+              "value": "={{ $json.event.Info.IsGroup }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        416,
+        0
+      ],
+      "id": "58763c0a-0e42-4bd5-a2c1-3e540f8d6057",
+      "name": "NORM"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "6b4d7965-aee2-43c7-9e0b-b6ea208bf87a",
+              "leftValue": "={{ $json.isGroup }}",
+              "rightValue": "true",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        624,
+        0
+      ],
+      "id": "2315d0fd-129c-469c-ab67-083b850e04fd",
+      "name": "If"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        832,
+        -96
+      ],
+      "id": "fdeab15e-2348-436a-a182-a9b9da360d4b",
+      "name": "NADA"
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "Voce é apenas uma IA normal porem que responde de forma curta e direta e é especialista em Skyrim responda sempre em uma unica mensagem",
+              "role": "model"
+            },
+            {
+              "content": "={{ $('NORM').item.json.mensagem }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        1680,
+        0
+      ],
+      "id": "f35b0803-af4d-495f-9a54-777f1b4981a7",
+      "name": "Message a model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "9R4cv6bZlsyU4zw3",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://3.82.24.11:8080/message/sendText/n8n",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $('NORM').item.json.numero }}"
+            },
+            {
+              "name": "text",
+              "value": "={{ $json.content.parts[0].text }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2032,
+        0
+      ],
+      "id": "66f8243d-033c-4b8a-9de4-ed261ec57953",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "fhkrB98Sto74vD2T",
+          "name": "Evolution"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "create",
+        "base": {
+          "__rl": true,
+          "value": "appLHt6ocXq5UiNVT",
+          "mode": "list",
+          "cachedResultName": "N8N Testes",
+          "cachedResultUrl": "https://airtable.com/appLHt6ocXq5UiNVT"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl8JeQC7JZjInlrr",
+          "mode": "list",
+          "cachedResultName": "Users",
+          "cachedResultUrl": "https://airtable.com/appLHt6ocXq5UiNVT/tbl8JeQC7JZjInlrr"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "phone": "={{ $('NORM').item.json.numero }}",
+            "full_name": "={{ $('NORM').item.json.nome }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": true
+            },
+            {
+              "id": "phone",
+              "displayName": "phone",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "full_name",
+              "displayName": "full_name",
+              "required": false,
+              "defaultMatch": false,
+              "canBeUsedToMatch": true,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        1296,
+        288
+      ],
+      "id": "29eee4ad-6e05-4fed-a1b4-739247b5eea8",
+      "name": "CRIAR CONTATO",
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "EJSbqXX1YnG1iD5z",
+          "name": "Airtable Testes"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "a0ec7696-4928-4ae4-bf1b-0d34c04fec0d",
+              "leftValue": "={{!Object.keys($node[\"Search records\"].data).length}}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1072,
+        48
+      ],
+      "id": "dd125f80-cd64-42d1-9780-973a23671a35",
+      "name": "If1",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1488,
+        0
+      ],
+      "id": "1c875b85-c837-47b6-a9cd-f9ea680972e2",
+      "name": "Merge",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appLHt6ocXq5UiNVT",
+          "mode": "list",
+          "cachedResultName": "N8N Testes",
+          "cachedResultUrl": "https://airtable.com/appLHt6ocXq5UiNVT"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tbl8JeQC7JZjInlrr",
+          "mode": "list",
+          "cachedResultName": "Profile",
+          "cachedResultUrl": "https://airtable.com/appLHt6ocXq5UiNVT/tbl8JeQC7JZjInlrr"
+        },
+        "filterByFormula": "={phone} = \"{{ $json.numero }}\"",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [
+        832,
+        48
+      ],
+      "id": "c5120a65-4729-45f5-b74d-1bd555200f05",
+      "name": "Search records",
+      "alwaysOutputData": true,
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "EJSbqXX1YnG1iD5z",
+          "name": "Airtable Testes"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "23.20.250.237:5678",
+            "user-agent": "go-resty/2.16.5 (https://github.com/go-resty/resty)",
+            "content-length": "2586",
+            "content-type": "application/x-www-form-urlencoded",
+            "accept-encoding": "gzip"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "jsonData": "{\"event\":{\"Info\":{\"Chat\":\"556196841987@s.whatsapp.net\",\"Sender\":\"556196841987:94@s.whatsapp.net\",\"IsFromMe\":false,\"IsGroup\":false,\"AddressingMode\":\"\",\"SenderAlt\":\"137443298807968:94@lid\",\"RecipientAlt\":\"\",\"BroadcastListOwner\":\"\",\"ID\":\"3F7F7C4EEBC259964BBA\",\"ServerID\":0,\"Type\":\"text\",\"PushName\":\"Diego\",\"Timestamp\":\"2025-08-20T19:01:59Z\",\"Category\":\"\",\"Multicast\":false,\"MediaType\":\"\",\"Edit\":\"\",\"MsgBotInfo\":{\"EditType\":\"\",\"EditTargetID\":\"\",\"EditSenderTimestampMS\":\"0001-01-01T00:00:00Z\"},\"MsgMetaInfo\":{\"TargetID\":\"\",\"TargetSender\":\"\",\"TargetChat\":\"\",\"DeprecatedLIDSession\":null,\"ThreadMessageID\":\"\",\"ThreadMessageSenderJID\":\"\"},\"VerifiedName\":null,\"DeviceSentMeta\":null},\"Message\":{\"extendedTextMessage\":{\"text\":\"Qual a maior ilusão da vida ?\",\"contextInfo\":{\"expiration\":0,\"ephemeralSettingTimestamp\":0,\"disappearingMode\":{\"initiator\":0}}},\"messageContextInfo\":{\"deviceListMetadata\":{\"senderKeyHash\":\"clLcgh8a8+bbIQ==\",\"senderTimestamp\":1754660312,\"recipientKeyHash\":\"hs/VT/pOZOCANw==\",\"recipientTimestamp\":1755708184},\"deviceListMetadataVersion\":2}},\"IsEphemeral\":false,\"IsViewOnce\":false,\"IsViewOnceV2\":false,\"IsViewOnceV2Extension\":false,\"IsDocumentWithCaption\":false,\"IsLottieSticker\":false,\"IsEdit\":false,\"SourceWebMsg\":null,\"UnavailableRequestID\":\"\",\"RetryCount\":0,\"NewsletterMeta\":null,\"RawMessage\":{\"extendedTextMessage\":{\"text\":\"Qual a maior ilusão da vida ?\",\"contextInfo\":{\"expiration\":0,\"ephemeralSettingTimestamp\":0,\"disappearingMode\":{\"initiator\":0}}},\"messageContextInfo\":{\"deviceListMetadata\":{\"senderKeyHash\":\"clLcgh8a8+bbIQ==\",\"senderTimestamp\":1754660312,\"recipientKeyHash\":\"hs/VT/pOZOCANw==\",\"recipientTimestamp\":1755708184},\"deviceListMetadataVersion\":2}}},\"type\":\"Message\"}",
+            "token": "5wozIDRZsYfCF6lI6jAEzrMNQlJchYKPw5jtXevYUb9gqh3i8RLQuqOy5gy3"
+          },
+          "webhookUrl": "http://0.0.0.0:5678/webhook-test/aula",
+          "executionMode": "test"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "PARSE1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "PARSE1": {
+      "main": [
+        [
+          {
+            "node": "NORM",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "NORM": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "NADA",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Search records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "CRIAR CONTATO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "CRIAR CONTATO": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search records": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "ffd364b0-0010-4be6-99ff-c413c88aa907",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "2a7011d82170b654fddc6a50068599f7081748a67194a21640112b3511a3ad79"
+  },
+  "id": "QCGSe1rKWCyKUA8z",
+  "tags": []
+}

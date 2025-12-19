@@ -1,0 +1,39 @@
+{
+    "checklists": {
+        "post": [
+            "Cita {{cidade}} ou bairro local?",
+            "Dor → abrangência → solução → implementação → CTA estão claros?",
+            "Um dado verificável?",
+            "Microcena humana?",
+            "CTA com WhatsApp {{whatsapp_padrao}}?"
+        ],
+        "tribuna": [
+            "Abertura com frase marcante?",
+            "3 pontos claros e curtos?",
+            "Sem juridiquês?",
+            "Encaminhamentos objetivos e possíveis?"
+        ],
+        "requerimento": [
+            "Endereço/equipamento e serviço claros?",
+            "Perguntas objetivas e numeradas?",
+            "Prazo definido?",
+            "Tom respeitoso e firme?"
+        ],
+        "checklists_gerais": {
+            "voz": [
+                "Soa natural em voz alta?",
+                "Frases curtas e voz ativa?",
+                "Zero juridiquês (termos explicados)?",
+                "Cita {{cidade}} ou bairro/local concreto?",
+                "Evita “povo” e adjetivos vazios?",
+                "CTA claro com {{whatsapp_padrao}}?"
+            ],
+            "personalizacao": [
+                "Menciona pelo menos 1 bairro e 1 segmento do perfil?",
+                "Enquadramento ideológico coerente?",
+                "Alinhado ao objetivo de comunicação principal?",
+                "Condizente com tempo/equipe disponíveis?"
+            ]
+        }
+    }
+}

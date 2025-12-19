@@ -1,0 +1,454 @@
+{
+    "$id": "ficha-tecnica.schema.json",
+    "type": "object",
+    "required": [
+        "nome_do_curso",
+        "tipo_de_curso",
+        "publico_alvo",
+        "objetivo_principal",
+        "datas_completas",
+        "local_completo",
+        "endereco_completo",
+        "whatsapp",
+        "email",
+        "conteudo_programatico",
+        "publico_p0",
+        "promessa"
+    ],
+    "properties": {
+        "nome_do_curso": {
+            "type": "string"
+        },
+        "tipo_de_curso": {
+            "type": "string"
+        },
+        "publico_alvo": {
+            "type": "string"
+        },
+        "objetivo_principal": {
+            "type": "string"
+        },
+        "escopo_metodologia": {
+            "type": "string"
+        },
+        "datas_completas": {
+            "type": "string"
+        },
+        "local_completo": {
+            "type": "string"
+        },
+        "endereco_completo": {
+            "type": "string"
+        },
+        "horario_detalhado": {
+            "type": "string"
+        },
+        "numero_vagas_presencial": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "numero_vagas_online": {
+            "type": "string"
+        },
+        "whatsapp": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string",
+            "format": "email"
+        },
+        "conteudo_programatico": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "required": [
+                    "titulo_modulo",
+                    "topicos"
+                ],
+                "properties": {
+                    "titulo_modulo": {
+                        "type": "string"
+                    },
+                    "topicos": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "resultados_esperados": {
+            "type": "string"
+        },
+        "contexto_mercado": {
+            "type": "string"
+        },
+        "concorrentes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "nome_concorrente"
+                ],
+                "properties": {
+                    "nome_concorrente": {
+                        "type": "string"
+                    },
+                    "modalidade": {
+                        "type": "string"
+                    },
+                    "duracao": {
+                        "type": "string"
+                    },
+                    "carga_horaria": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "pontos_fortes": {
+                        "type": "string"
+                    },
+                    "valores_concorrente": {
+                        "type": "string"
+                    },
+                    "pontos_fracos": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "diferenciais": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "formas_pagamento": {
+            "type": "string"
+        },
+        "url_vendas": {
+            "type": "string",
+            "format": "uri"
+        },
+        "observacoes_compra": {
+            "type": "string"
+        },
+        "modalidades": {
+            "type": "object",
+            "properties": {
+                "presencial": {
+                    "type": "object",
+                    "properties": {
+                        "valor": {
+                            "type": "string"
+                        },
+                        "transmissao_ao_vivo": {
+                            "type": "boolean"
+                        },
+                        "acesso_gravacao": {
+                            "type": "boolean"
+                        },
+                        "grupo_whatsapp": {
+                            "type": "boolean"
+                        },
+                        "kit_aluno": {
+                            "type": "boolean"
+                        },
+                        "area_aluno": {
+                            "type": "boolean"
+                        },
+                        "materiais_impressos": {
+                            "type": "boolean"
+                        },
+                        "materiais_pdf": {
+                            "type": "boolean"
+                        },
+                        "coffee_break": {
+                            "type": "boolean"
+                        },
+                        "certificado": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "online": {
+                    "type": "object",
+                    "properties": {
+                        "valor": {
+                            "type": "string"
+                        },
+                        "transmissao_ao_vivo": {
+                            "type": "boolean"
+                        },
+                        "acesso_gravacao": {
+                            "type": "boolean"
+                        },
+                        "grupo_whatsapp": {
+                            "type": "boolean"
+                        },
+                        "kit_aluno": {
+                            "type": "boolean"
+                        },
+                        "area_aluno": {
+                            "type": "boolean"
+                        },
+                        "materiais_impressos": {
+                            "type": "boolean"
+                        },
+                        "materiais_pdf": {
+                            "type": "boolean"
+                        },
+                        "coffee_break": {
+                            "type": "boolean"
+                        },
+                        "certificado": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "presencial_gravacao": {
+                    "type": "object",
+                    "properties": {
+                        "valor": {
+                            "type": "string"
+                        },
+                        "transmissao_ao_vivo": {
+                            "type": "boolean"
+                        },
+                        "acesso_gravacao": {
+                            "type": "boolean"
+                        },
+                        "grupo_whatsapp": {
+                            "type": "boolean"
+                        },
+                        "kit_aluno": {
+                            "type": "boolean"
+                        },
+                        "area_aluno": {
+                            "type": "boolean"
+                        },
+                        "materiais_impressos": {
+                            "type": "boolean"
+                        },
+                        "materiais_pdf": {
+                            "type": "boolean"
+                        },
+                        "coffee_break": {
+                            "type": "boolean"
+                        },
+                        "certificado": {
+                            "type": "boolean"
+                        }
+                    }
+                }
+            }
+        },
+        "observacoes_modalidades": {
+            "type": "string"
+        },
+        "observacoes_reembolso": {
+            "type": "string"
+        },
+        "tem_pre_venda": {
+            "type": "boolean"
+        },
+        "detalhes_prevenda": {
+            "type": "string"
+        },
+        "detalhes_descontos": {
+            "type": "string"
+        },
+        "publico_p0": {
+            "type": "string"
+        },
+        "publicos_secundarios": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "persona": {
+            "type": "object",
+            "properties": {
+                "nome": {
+                    "type": "string"
+                },
+                "idade": {
+                    "type": "integer"
+                },
+                "profissao": {
+                    "type": "string"
+                },
+                "localizacao": {
+                    "type": "string"
+                },
+                "formacao": {
+                    "type": "string"
+                },
+                "experiencia": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "motivacoes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "canais": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "dores": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "desejos": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "problemas_resolvidos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "titulo_problema",
+                    "explicacao_solucao"
+                ],
+                "properties": {
+                    "titulo_problema": {
+                        "type": "string"
+                    },
+                    "explicacao_solucao": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "tentativas_frustradas": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "titulo_tentativa",
+                    "descricao_tentativa"
+                ],
+                "properties": {
+                    "titulo_tentativa": {
+                        "type": "string"
+                    },
+                    "descricao_tentativa": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "gatilhos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "tipo_gatilho",
+                    "como_usar"
+                ],
+                "properties": {
+                    "tipo_gatilho": {
+                        "type": "string"
+                    },
+                    "como_usar": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "promessa": {
+            "type": "string"
+        },
+        "introducao_valor": {
+            "type": "string"
+        },
+        "elementos_valor": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "titulo_elemento",
+                    "descricao_elemento"
+                ],
+                "properties": {
+                    "titulo_elemento": {
+                        "type": "string"
+                    },
+                    "descricao_elemento": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "tom_comunicacao": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "caracteristica_tom",
+                    "descricao_aplicacao"
+                ],
+                "properties": {
+                    "caracteristica_tom": {
+                        "type": "string"
+                    },
+                    "descricao_aplicacao": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "metas_venda": {
+            "type": "object",
+            "properties": {
+                "online": {
+                    "type": "integer"
+                },
+                "presencial": {
+                    "type": "integer"
+                },
+                "presencial_gravacao": {
+                    "type": "integer"
+                }
+            }
+        },
+        "objecoes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "titulo_objecao",
+                    "resposta_objecao"
+                ],
+                "properties": {
+                    "titulo_objecao": {
+                        "type": "string"
+                    },
+                    "resposta_objecao": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

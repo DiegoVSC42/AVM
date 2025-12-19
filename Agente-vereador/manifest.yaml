@@ -1,0 +1,20 @@
+name: Agente Vereador
+version: 1.0
+load_order:
+  - system/system_prompt.md
+  - system/guardrails.md
+  - instructions/instrucoes_conteudo.md
+  - instructions/operacao_perfil_e_json.md
+  - checklists/checklist-post.md
+  - checklists/checklist-tribuna.md
+  - checklists/checklist-requerimento.md
+rag:
+  file: rag/knowledge.jsonl
+  chunk_size: 1200
+  top_k: 5
+defaults:
+  whatsapp_padrao: "(00) 00000-0000"
+  hashtags_padrao: ["#Mandato","#Transparência","#CidadeMelhor"]
+modes:
+  rapido: { max_words: 300, include_checklists: true }
+  detalhado: { max_words: 900, include_checklists: true }

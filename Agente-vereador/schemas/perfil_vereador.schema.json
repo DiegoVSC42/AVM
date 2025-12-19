@@ -1,0 +1,219 @@
+{
+    "$id": "perfil_vereador.schema.json",
+    "type": "object",
+    "required": [
+        "nome",
+        "mandato",
+        "ideologia",
+        "posicionamentoGestao",
+        "bairrosAlvo",
+        "temasPrioritarios",
+        "cidade"
+    ],
+    "properties": {
+        "nome": {
+            "type": "string"
+        },
+        "mandato": {
+            "type": "string"
+        },
+        "historiaCurta": {
+            "type": "string"
+        },
+        "estruturaFamiliar": {
+            "type": "string"
+        },
+        "religiao": {
+            "type": "string"
+        },
+        "ideologia": {
+            "type": "string"
+        },
+        "posicionamentoGestao": {
+            "type": "string"
+        },
+        "bairrosAlvo": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "regioes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "temasPrioritarios": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+                "type": "string"
+            }
+        },
+        "segmentosAfinidade": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "objetivosComunicacao": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "tempoSemanalDisponivelHoras": {
+            "type": "string"
+        },
+        "estruturaEquipe": {
+            "type": "string"
+        },
+        "canaisAtivos": {
+            "type": "object",
+            "properties": {
+                "instagram": {
+                    "type": "string"
+                },
+                "facebook": {
+                    "type": "string"
+                },
+                "youtube": {
+                    "type": "string"
+                },
+                "whatsapp": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "redePrioritaria": {
+            "type": "string"
+        },
+        "cidade": {
+            "type": "string"
+        },
+        "contatos": {
+            "type": "object",
+            "properties": {
+                "whatsapp": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "frequenciaPublicacaoSemanalPorRede": {
+            "type": "object",
+            "properties": {
+                "instagram": {
+                    "type": "string"
+                },
+                "facebook": {
+                    "type": "string"
+                },
+                "youtube": {
+                    "type": "string"
+                },
+                "whatsapp": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "planejaConteudoSemanal": {
+            "type": "string"
+        },
+        "respondeComentariosPercentual": {
+            "type": "string"
+        },
+        "tempoMedioRespostaComentariosHoras": {
+            "type": "string"
+        },
+        "interacaoComOutrosPerfis": {
+            "type": "string"
+        },
+        "integracaoEntreCanais": {
+            "type": "string"
+        },
+        "provaTrabalhoPublicada": {
+            "type": "object",
+            "properties": {
+                "votacoes": {
+                    "type": "string"
+                },
+                "requerimentos": {
+                    "type": "string"
+                },
+                "fiscalizacoes": {
+                    "type": "string"
+                },
+                "emendas": {
+                    "type": "string"
+                },
+                "prestacaoContas": {
+                    "type": "string"
+                }
+            }
+        },
+        "prestacaoContasRecorrente": {
+            "type": "string"
+        },
+        "bibliotecaMidia": {
+            "type": "object",
+            "properties": {
+                "fotosBoas": {
+                    "type": "string"
+                },
+                "videosBroll": {
+                    "type": "string"
+                },
+                "vinhetas": {
+                    "type": "string"
+                }
+            }
+        },
+        "basePropria": {
+            "type": "object",
+            "properties": {
+                "whatsappContatos": {
+                    "type": "string"
+                },
+                "emailContatos": {
+                    "type": "string"
+                }
+            }
+        },
+        "padroesVisuaisConsistentes": {
+            "type": "string"
+        },
+        "linguagemPadronizada": {
+            "type": "string"
+        },
+        "riscosJuridicos": {
+            "type": "object",
+            "properties": {
+                "whatsappOptIn": {
+                    "type": "string"
+                },
+                "emailOptIn": {
+                    "type": "string"
+                },
+                "usaBaseComprada": {
+                    "type": "string"
+                }
+            }
+        },
+        "observacoes": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

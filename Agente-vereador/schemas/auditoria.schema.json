@@ -1,0 +1,128 @@
+{
+    "$id": "auditoria.schema.json",
+    "type": "object",
+    "properties": {
+        "frequenciaPublicacaoSemanalPorRede": {
+            "type": "object",
+            "properties": {
+                "instagram": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "facebook": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "youtube": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "whatsapp": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "email": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "planejaConteudoSemanal": {
+            "type": "boolean"
+        },
+        "respondeComentariosPercentual": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "tempoMedioRespostaComentariosHoras": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "interacaoComOutrosPerfis": {
+            "type": "boolean"
+        },
+        "integracaoEntreCanais": {
+            "type": "boolean"
+        },
+        "provaTrabalhoPublicada": {
+            "type": "object",
+            "properties": {
+                "votacoes": {
+                    "type": "boolean"
+                },
+                "requerimentos": {
+                    "type": "boolean"
+                },
+                "fiscalizacoes": {
+                    "type": "boolean"
+                },
+                "emendas": {
+                    "type": "boolean"
+                },
+                "prestacaoContas": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": false
+        },
+        "prestacaoContasRecorrente": {
+            "type": "boolean"
+        },
+        "bibliotecaMidia": {
+            "type": "object",
+            "properties": {
+                "fotosBoas": {
+                    "type": "boolean"
+                },
+                "videosBroll": {
+                    "type": "boolean"
+                },
+                "vinhetas": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": false
+        },
+        "basePropria": {
+            "type": "object",
+            "properties": {
+                "whatsappContatos": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "emailContatos": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            },
+            "additionalProperties": false
+        },
+        "padroesVisuaisConsistentes": {
+            "type": "boolean"
+        },
+        "linguagemPadronizada": {
+            "type": "boolean"
+        },
+        "riscosJuridicos": {
+            "type": "object",
+            "properties": {
+                "whatsappOptIn": {
+                    "type": "boolean"
+                },
+                "emailOptIn": {
+                    "type": "boolean"
+                },
+                "usaBaseComprada": {
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": false
+        },
+        "observacoes": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

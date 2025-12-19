@@ -1,0 +1,25 @@
+{
+    "cidade": "São Vicente do Vale",
+    "bairros_alvo": [
+        "Santo Antônio",
+        "Vila Esperança",
+        "Centro",
+        "Nova Aliança",
+        "São José"
+    ],
+    "tema_prioritario_1": "Educação",
+    "segmentos_chave": [
+        "Professores e profissionais da educação",
+        "Famílias com filhos na rede pública",
+        "Jovens",
+        "Lideranças comunitárias"
+    ],
+    "posicionamento_gestao": "situação",
+    "ideologia": "conservador",
+    "rede_prioritaria": "whatsapp",
+    "objetivo_comunicacao_principal": "Explicar o trabalho do mandato",
+    "endereco_ou_equipamento": "",
+    "prazo_data": "",
+    "valor_quantidade": "",
+    "ato_numero": ""
+}

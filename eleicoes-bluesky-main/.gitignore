@@ -1,0 +1,5 @@
+.env
+.git/
+tags
+__pycache__/
+env

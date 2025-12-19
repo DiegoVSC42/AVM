@@ -1,0 +1,11 @@
+
+# Versiones alinhadas e sem warnings deprecados
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-ollama>=0.2.0
+langchain-chroma>=0.1.2
+chromadb>=0.5.4
+pypdf>=4.3.1
+rank-bm25>=0.2.2
+python-dotenv>=1.0.1
+tiktoken>=0.7.0

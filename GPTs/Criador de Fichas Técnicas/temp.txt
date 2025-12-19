@@ -1,0 +1,281 @@
+# FICHA TÉCNICA - {{nome_do_curso}}
+
+## ÍNDICE
+
+1. Introdução
+2. Produto
+   - 2.1 Conteúdo programático
+   - 2.2 Resultado do curso para o público alvo
+   - 2.3 Concorrentes
+   - 2.4 Diferenciais em relação aos concorrentes
+   - 2.5 Modalidades, valores e formas de pagamento
+   - 2.6 Reembolso
+   - 2.7 Descontos
+   - 2.8 Idealizadores do curso
+3. Marketing
+   - 3.1 Público P0
+   - 3.2 Públicos secundários
+   - 3.3 Persona do produto
+   - 3.4 Principais dores do público
+   - 3.5 Principais desejos do público
+   - 3.6 Problemas que o curso resolve
+   - 3.7 Tentativas anteriores frustradas
+   - 3.8 Gatilhos emocionais
+   - 3.9 Promessa
+   - 3.10 Percepção de valor
+   - 3.11 Tom e estilo de comunicação
+   - 3.12 Metas mínimas de venda
+4. Tratamento de dúvidas e objeções
+
+## 1. INTRODUÇÃO
+
+Este formulário foi elaborado para consolidar todas as informações essenciais sobre o curso **{{nome_do_curso}}**, garantindo maior alinhamento entre as equipes envolvidas. Ele servirá como referência para o time de marketing na criação de estratégias e conteúdos direcionados, auxiliará a equipe de atendimento no esclarecimento de dúvidas e no tratamento de objeções, oferecerá suporte à equipe de eventos para a organização do curso e funcionará como material base para a integração de novos membros, proporcionando um conhecimento aprofundado sobre o produto.
+
+## 2. PRODUTO
+
+O {{nome_do_curso}} é um curso {{tipo_de_curso}} com tudo o que {{publico_alvo}} precisam saber para {{objetivo_principal}}, com metodologia que engloba {{escopo_metodologia}}.
+
+O curso acontecerá {{datas_completas}} no {{local_completo}} no endereço {{endereco_completo}}.
+
+{{horario_detalhado}}
+
+Na modalidade presencial, o número de vagas é de {{numero_vagas_presencial}}, enquanto o on-line possui {{numero_vagas_online}}.
+{{/se_presencial}}
+
+Os principais canais de atendimento ao cliente são via WhatsApp, pelo número {{whatsapp}}, e pelo e-mail, através do endereço {{email}}.
+
+### 2.1 CONTEÚDO PROGRAMÁTICO
+
+{{#conteudo_programatico}}
+**{{titulo_modulo}}**
+
+{{#topicos}}
+
+- {{topico}}
+
+{{/topicos}}
+{{/conteudo_programatico}}
+
+### 2.2 RESULTADO DO CURSO PARA O PÚBLICO ALVO
+
+{{resultados_esperados}}
+
+### 2.3 CONCORRENTES
+
+{{contexto_mercado}}
+
+{{#concorrentes}}
+**{{nome_concorrente}}**
+
+- **Modalidade:** {{modalidade}}
+- **Duração:** {{duracao}}
+- **Carga horária:** {{carga_horaria}}
+- **Página de vendas:** {{url}}
+
+**Pontos fortes:**
+{{pontos_fortes}}
+
+**Valores:**
+{{valores_concorrente}}
+
+**Pontos fracos:**
+{{pontos_fracos}}
+{{/concorrentes}}
+
+### 2.4 DIFERENCIAIS EM RELAÇÃO AOS CONCORRENTES
+
+{{#diferenciais}}
+{{diferencial}}
+{{/diferenciais}}
+
+### 2.5 MODALIDADES, VALORES E FORMAS DE PAGAMENTO
+
+O curso poderá ser adquirido por {{formas_pagamento}} e deverá ser adquirido através da página de vendas no endereço {{url_vendas}}.
+
+{{observacoes_compra}}
+
+| | **{{modalidade_presencial}}** | **{{modalidade_online}}** | **{{modalidade_presencial_gravacao}}** ||
+| **Valor** | {{valor_presencial}} | {{valor_online}} | {{valor_presencial_gravacao}} |
+| **Transmissão ao vivo** | {{transmissao_presencial}} | {{transmissao_online}} | {{transmissao_presencial_gravacao}} |
+| **Acesso a gravação** | {{gravacao_presencial}} | {{gravacao_online}} | {{gravacao_presencial_gravacao}} |
+| **Grupo no Whatsapp** | {{grupo_presencial}} | {{grupo_online}} | {{grupo_presencial_gravacao}} |
+| **Kit do aluno** | {{kit_presencial}} | {{kit_online}} | {{kit_presencial_gravacao}} |
+| **Área do aluno** | {{area_presencial}} | {{area_online}} | {{area_presencial_gravacao}} |
+| **Materiais impressos** | {{impressos_presencial}} | {{impressos_online}} | {{impressos_presencial_gravacao}} |
+| **Materiais em PDF** | {{pdf_presencial}} | {{pdf_online}} | {{pdf_presencial_gravacao}} |
+| **Coffee break** | {{coffee_presencial}} | {{coffee_online}} | {{coffee_presencial_gravacao}} |
+| **Certificado** | {{cert_presencial}} | {{cert_online}} | {{cert_presencial_gravacao}} |
+
+**Observações:**
+{{observacoes_modalidades}}
+
+### 2.6 REEMBOLSO (cursos presenciais)
+
+A política de reembolso do curso {{nome_do_curso}} obedece às seguintes regras (se_presencial):
+
+| **Situação** | **Porcentagem do valor total a ser reembolsado** ||
+| Solicitação de reembolso realizada em até 7 dias corridos após a compra.  | 100% |
+| Solicitação de reembolso realizada em até 30 dias antes da data de início do curso.   | 70% |
+| Solicitação de reembolso realizada entre 30 e 7 dias antes da data de início do curso.   | 20% |
+| Em caso de não comparecimento. | 0% |
+
+O reembolso é feito em cima do valor total do curso, desconsiderando qualquer taxa de parcelamento, cujo pagamento é de responsabilidade e encargo do cliente.
+
+**Ponto a ser discutido com sócios e financeiro:
+
+- Política de reembolso para compradores on-line.**
+
+{{observacoes_reembolso}}
+
+### 2.6 REEMBOLSO (cursos online)
+
+A política de reembolso do curso {{nome_do_curso}} obedece às seguintes regras (se_presencial):
+
+| **Situação** | **Porcentagem do valor total a ser reembolsado** ||
+| Solicitação de reembolso realizada em até 7 dias corridos após a compra.  | 100% |
+
+O reembolso é feito em cima do valor total do curso, desconsiderando qualquer taxa de parcelamento, cujo pagamento é de responsabilidade e encargo do cliente.
+
+**Ponto a ser discutido com sócios e financeiro:
+
+- Política de reembolso para compradores on-line.**
+
+{{observacoes_reembolso}}
+
+### 2.7 DESCONTOS
+
+{{tem_pre_venda}}
+
+| | **{{Pré-venda modalidade On-line}}** | **{{Pré-venda modalidade Presencial}}** | **{{Venda}}** ||
+| **Alunos AVM** | 40% | 20% | 20% na compra de 5 ingressos ou mais. |
+| **Não alunos** | - | - | 20% na compra de 5 ingressos ou mais. |
+
+**Detalhes:**
+{{detalhes_prevenda}}
+
+{{detalhes_descontos}}
+
+### 2.8 IDEALIZADORES DO CURSO
+
+O curso {{nome_do_curso}} foi criado por Academia Vitorino & Mendonça, a maior escola de marketing e comunicação política do Brasil, sob a liderança do professor Marcelo Vitorino, um dos maiores especialistas em marketing político e em comunicação institucional do país.
+
+Marcelo Vitorino é consultor e professor de marketing político, com mais de 20 anos de experiência no mercado. Ele é pioneiro na comunicação política digital no Brasil, atuando nesse campo desde 2008. Já trabalhou em campanhas eleitorais em todas as regiões do Brasil, cobrindo cargos que vão de vereadores a governadores e presidentes. É autor dos livros "Coisas que todo profissional que quer trabalhar com marketing político deveria saber" e “Seja Vereador”, e fundador da Academia Vitorino & Mendonça, a primeira e maior escola dedicada exclusivamente à formação em comunicação eleitoral e política no Brasil.
+
+Como consultor de comunicação com mais de 20 anos de experiência, atuou como estrategista de comunicação digital, ajudando empresas e instituições de grande porte a explorarem melhor o potencial da internet. Entre as organizações atendidas estão o Senado Federal, SEBRAE, Instituto Ethos, Governo do Mato Grosso, as Prefeituras do Rio de Janeiro, Boa Vista e Porto Velho, entre outras. Além de partidos políticos como MDB e PSDB.
+
+No meio acadêmico, Vitorino já ministrou aulas em instituições de prestígio como a Universidade de Lisboa, Universidade de Coimbra e Universidade de Salamanca. Atualmente, é o idealizador e professor do MBA em Comunicação Governamental e Marketing Político da Faculdade de Ciência Política de Brasília (FCPB) e já foi professor da ESPM. Ao longo de sua trajetória, formou mais de 20 mil alunos e desenvolveu metodologias inovadoras amplamente utilizadas por profissionais do setor.
+
+Marcelo Vitorino também é uma figura reconhecida pela imprensa e por políticos, tendo concedido entrevistas para veículos como CNN e Jornal Nacional, além de participar de discussões no Congresso Nacional sobre fake news e eleições e também sobre a minirreforma eleitoral. Em 2024, ele foi incluído na lista dos 100 profissionais de comunicação e marketing político mais influentes do mundo pela Washington COMPOL.
+
+## 3. MARKETING
+
+### 3.1 PÚBLICO P0
+
+{{publico_p0}}
+
+### 3.2 PÚBLICOS SECUNDÁRIOS
+
+{{#publicos_secundarios}}
+
+- {{publico_secundario}}
+
+{{/publicos_secundarios}}
+
+### 3.3 PERSONA DO PRODUTO
+
+**Nome:** {{persona_nome}}
+
+**Idade:** {{persona_idade}}
+
+**Profissão:** {{persona_profissao}}
+
+**Localização:** {{persona_localizacao}}
+
+**Formação:** {{persona_formacao}}
+
+**Experiência Profissional:**
+{{#persona_experiencia}}
+
+- {{experiencia}}
+{{/persona_experiencia}}
+
+**Motivações para Comprar o Curso:**
+{{#persona_motivacoes}}
+
+- {{motivacao}}
+{{/persona_motivacoes}}
+
+**Canais de Consumo de Informação:**
+{{#persona_canais}}
+
+- {{canal}}
+{{/persona_canais}}
+
+### 3.4 QUAIS SÃO AS PRINCIPAIS DORES DESSE PÚBLICO?
+
+{{#dores}}
+
+- {{dor}}
+{{/dores}}
+
+### 3.5 QUAIS SÃO OS PRINCIPAIS DESEJOS DESSE PÚBLICO?
+
+{{#desejos}}
+
+- {{desejo}}
+{{/desejos}}
+
+### 3.6 QUAIS PROBLEMAS O CURSO RESOLVE PARA O PÚBLICO-ALVO?
+
+{{#problemas_resolvidos}}
+
+- **{{titulo_problema}}:** {{explicacao_solucao}}
+{{/problemas_resolvidos}}
+
+### 3.7 O QUE ESSE PÚBLICO JÁ TENTOU FAZER PARA RESOLVER ESSE PROBLEMA E NÃO CONSEGUIU?
+
+{{#tentativas_frustradas}}
+
+- **{{titulo_tentativa}}:** {{descricao_tentativa}}
+{{/tentativas_frustradas}}
+
+### 3.8 GATILHOS EMOCIONAIS QUE PODEM SER USADOS COM O PÚBLICO-ALVO
+
+{{#gatilhos}}
+
+- **{{tipo_gatilho}}:** {{como_usar}}
+{{/gatilhos}}
+
+### 3.9 PROMESSA
+
+{{promessa}}
+
+### 3.10 O QUE AUMENTA A PERCEPÇÃO DE VALOR DO PRODUTO
+
+{{introducao_valor}}
+
+{{#elementos_valor}}
+
+- **{{titulo_elemento}}** -- {{descricao_elemento}}
+{{/elementos_valor}}
+
+### 3.11 TOM E ESTILO DE COMUNICAÇÃO
+
+{{#tom_comunicacao}}
+
+- {{caracteristica_tom}}: {{descricao_aplicacao}}
+{{/tom_comunicacao}}
+
+### 3.12 METAS MÍNIMAS DE VENDA
+
+| | **On-line** | **Presencial** | **Presencial + gravação** ||
+| **Meta de Vendas** | {{meta_1}} | {{meta_2}} | {{meta_3}} |
+
+## 4. COMO TRATAR DÚVIDAS E OBJEÇÕES
+
+{{#objecoes}}
+**Objeção:** {{titulo_objecao}}
+
+**Resposta:**
+{{resposta_objecao}}
+{{/objecoes}}

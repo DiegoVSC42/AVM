@@ -1,0 +1,230 @@
+{
+    "$id": "perfil_vereador.schema.json",
+    "type": "object",
+    "required": [
+        "nome",
+        "mandato",
+        "ideologia",
+        "posicionamentoGestao",
+        "bairrosAlvo",
+        "temasPrioritarios",
+        "cidade"
+    ],
+    "properties": {
+        "nome": {
+            "type": "string"
+        },
+        "mandato": {
+            "type": "string"
+        },
+        "historiaCurta": {
+            "type": "string"
+        },
+        "estruturaFamiliar": {
+            "type": "string"
+        },
+        "religiao": {
+            "type": "string"
+        },
+        "ideologia": {
+            "type": "string"
+        },
+        "posicionamentoGestao": {
+            "type": "string"
+        },
+        "bairrosAlvo": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "regioes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "temasPrioritarios": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+                "type": "string"
+            }
+        },
+        "segmentosAfinidade": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "objetivosComunicacao": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "tempoSemanalDisponivelHoras": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "estruturaEquipe": {
+            "type": "string"
+        },
+        "canaisAtivos": {
+            "type": "object",
+            "properties": {
+                "instagram": {
+                    "type": "boolean"
+                },
+                "facebook": {
+                    "type": "boolean"
+                },
+                "youtube": {
+                    "type": "boolean"
+                },
+                "whatsapp": {
+                    "type": "boolean"
+                },
+                "email": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "redePrioritaria": {
+            "type": "string"
+        },
+        "cidade": {
+            "type": "string"
+        },
+        "contatos": {
+            "type": "object",
+            "properties": {
+                "whatsapp": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "frequenciaPublicacaoSemanalPorRede": {
+            "type": "object",
+            "properties": {
+                "instagram": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "facebook": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "youtube": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "whatsapp": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "email": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
+        "planejaConteudoSemanal": {
+            "type": "boolean"
+        },
+        "respondeComentariosPercentual": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "tempoMedioRespostaComentariosHoras": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "interacaoComOutrosPerfis": {
+            "type": "boolean"
+        },
+        "integracaoEntreCanais": {
+            "type": "boolean"
+        },
+        "provaTrabalhoPublicada": {
+            "type": "object",
+            "properties": {
+                "votacoes": {
+                    "type": "boolean"
+                },
+                "requerimentos": {
+                    "type": "boolean"
+                },
+                "fiscalizacoes": {
+                    "type": "boolean"
+                },
+                "emendas": {
+                    "type": "boolean"
+                },
+                "prestacaoContas": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "prestacaoContasRecorrente": {
+            "type": "boolean"
+        },
+        "bibliotecaMidia": {
+            "type": "object",
+            "properties": {
+                "fotosBoas": {
+                    "type": "boolean"
+                },
+                "videosBroll": {
+                    "type": "boolean"
+                },
+                "vinhetas": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "basePropria": {
+            "type": "object",
+            "properties": {
+                "whatsappContatos": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "emailContatos": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            }
+        },
+        "padroesVisuaisConsistentes": {
+            "type": "boolean"
+        },
+        "linguagemPadronizada": {
+            "type": "boolean"
+        },
+        "riscosJuridicos": {
+            "type": "object",
+            "properties": {
+                "whatsappOptIn": {
+                    "type": "boolean"
+                },
+                "emailOptIn": {
+                    "type": "boolean"
+                },
+                "usaBaseComprada": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "observacoes": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+[
+    {
+        "id": "0eb85586-5591-49ff-a9f4-aa51730e33d4",
+        "vereador_id": "2eba0882-007a-4eeb-a171-d9abdc111d20",
+        "created_at": "2025-11-06T18:49:54.417751+00:00",
+        "updated_at": "2025-11-06T18:49:54.417751+00:00",
+        "votacoes": "preferencias votacoes",
+        "mobilizacao_social": "preferencias mobilizacao_social",
+        "requerimento_executivo": "preferencias requerimento_executivo",
+        "fiscalizacao": "preferencias fiscalizacao",
+        "tribuna": "preferencias tribuna",
+        "leis": "preferencias leis",
+        "atendimento_gabinete": "preferencias atendimento_gabinete",
+        "orcamento": "preferencias orcamento",
+        "eventos": "preferencias eventos",
+        "reunioes": "preferencias reunioes",
+        "viagens_oficiais": "preferencias viagens_oficiais",
+        "prestacao_contas": "preferencias prestacao_contas",
+        "emendas": "preferencias emendas",
+        "honrarias": "preferencias honrarias",
+        "defesa_ideologia": "preferencias defesa_ideologia",
+        "comissoes": "preferencias comissoes"
+    }
+]
