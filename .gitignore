@@ -1,57 +1,281 @@
-# Byte-compiled / optimized / DLL files
+# ============================================================================
+# DEPENDÊNCIAS E PACOTES
+# ============================================================================
+
+# Node.js / JavaScript / TypeScript
+node_modules/
+jspm_packages/
+bower_components/
+.pnp/
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Caches
-*.log
-*.tmp
-*.bak
-*.swp
-*.swo
-.cache/
-*.sqlite3
-
-# Environments
+*.so
 .venv/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+.installed.cfg
 
-# VSCode
-.vscode/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints
-
-# Python virtual environment (pipenv, poetry)
+# Python - pipenv/poetry
 Pipfile.lock
 poetry.lock
 
-# Pytest cache
+# Ruby
+vendor/bundle/
+.bundle/
+
+# PHP
+vendor/
+composer.lock
+
+# .NET
+bin/
+obj/
+packages/
+.nuget/
+
+# Go
+vendor/
+
+# Rust
+target/
+Cargo.lock
+
+# Java/Maven/Gradle
+target/
+.gradle/
+build/
+.m2/
+
+# ============================================================================
+# CACHE E TEMPORÁRIOS
+# ============================================================================
+
+# Python cache
 .pytest_cache/
-
-# MyPy
 .mypy_cache/
+.pytype/
+.pyre/
+.tox/
+.nox/
+htmlcov/
+.coverage
+.coverage.*
+.hypothesis/
+.cache/
 
-# LangChain specific
-*.json  # caso você salve respostas temporárias
-*.yaml  # se estiver usando agentes com arquivos config temporários
-*.db    # caso use algum tipo de armazenamento local
+# Node.js cache
+.npm/
+.eslintcache
+.stylelintcache
+.parcel-cache
+*.tsbuildinfo
+.next/
+.nuxt/
+.cache/
 
-# Secrets
-*.env
-.env.*
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# OS generated files
+# Temporários
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Databases locais
+*.sqlite
+*.sqlite3
+*.db
+
+# ============================================================================
+# JUPYTER NOTEBOOK
+# ============================================================================
+
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ============================================================================
+# EDITORES E IDEs
+# ============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# ============================================================================
+# SISTEMA OPERACIONAL
+# ============================================================================
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
 Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
 
 # ============================================================================
-# DEPENDÊNCIAS E PACOTES
+# SECRETS E CREDENCIAIS
 # ============================================================================
 
-# Node.js
-node
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Secrets específicos
+secrets.json
+credentials.json
+service-account.json
+*-service-account.json
+*_credentials.json
+firebase-adminsdk-*.json
+
+# Chaves e certificados
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# Cloud providers
+.aws/
+.azure/
+.gcloud/
+
+# ============================================================================
+# ARQUIVOS GRANDES E BINÁRIOS
+# ============================================================================
+
+# Áudio e vídeo
+*.mp3
+*.m4a
+*.wav
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Executáveis
+*.exe
+*.app
+*.dmg
+*.pkg
+*.msi
+
+# Documentação com arquivos grandes
+Documentos para documentação/
+
+# Aplicações empacotadas (Electron/Nativefier)
+*-win32-x64/
+*-darwin-x64/
+*-linux-x64/
+Nativefier/
+DownDetector-*/
+
+# Arquivos compactados
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.iso
+
+# ============================================================================
+# LANGCHAIN / IA / ML
+# ============================================================================
+
+# LangChain specific - APENAS arquivos JSON/YAML sensíveis
+secrets.json
+credentials.json
+agent_responses.json
+temp_*.json
+*_temp.json
+langchain_cache.json
+temp_*.yaml
+*_temp.yaml
+agent_*.yaml
+
+# Model files
+*.h5
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.mlmodel
+
+# Vector stores
+*.faiss
+*.index
+chroma/
+chroma_db/
+vectorstore/
