@@ -1,0 +1,48 @@
+{
+    "Instagram": {
+        "formatos": [
+            "Reels",
+            "Stories",
+            "Card/Foto",
+            "Carrossel"
+        ]
+    },
+    "Facebook": {
+        "formatos": [
+            "Reels",
+            "Stories",
+            "Card/Foto",
+            "Link Externo",
+            "Grupo"
+        ]
+    },
+    "TikTok": {
+        "formatos": [
+            "Vídeo"
+        ]
+    },
+    "YouTube": {
+        "formatos": [
+            "Shorts",
+            "Vídeo Longo"
+        ]
+    },
+    "WhatsApp": {
+        "formatos": [
+            "Status"
+        ]
+    },
+    "Site": {
+        "formatos": [
+            "Artigo",
+            "Notícia"
+        ]
+    },
+    "Outros": {
+        "formatos": [
+            "Convocação",
+            "Audio",
+            "Discurso"
+        ]
+    }
+}

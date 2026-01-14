@@ -1,0 +1,62 @@
+[
+    {
+        "nome": "Mobilização Social",
+        "descricao": "Engajamento da comunidade"
+    },
+    {
+        "nome": "Requerimento ao Executivo",
+        "descricao": "Cobranças formais"
+    },
+    {
+        "nome": "Fiscalização",
+        "descricao": "Fiscalização de órgãos"
+    },
+    {
+        "nome": "Discurso de Tribuna",
+        "descricao": "Posicionamentos públicos"
+    },
+    {
+        "nome": "Projeto de Lei",
+        "descricao": "Proposição de leis"
+    },
+    {
+        "nome": "Atendimento à População",
+        "descricao": "Demandas da população"
+    },
+    {
+        "nome": "Evento",
+        "descricao": "Participações oficiais"
+    },
+    {
+        "nome": "Reunião",
+        "descricao": "Reuniões de trabalho"
+    },
+    {
+        "nome": "Viagem",
+        "descricao": "Viagens institucionais"
+    },
+    {
+        "nome": "Prestação de Contas",
+        "descricao": "Relatórios do mandato"
+    },
+    {
+        "nome": "Emenda Parlamentar",
+        "descricao": "Emendas apresentadas"
+    },
+    {
+        "nome": "Honraria",
+        "descricao": "Homenagens e honrarias"
+    },
+    {
+        "nome": "Posicionamento Ideológico",
+        "descricao": "Defesa de princípios"
+    },
+    {
+        "nome": "Comissão",
+        "descricao": "Trabalho em comissões"
+    },
+    {
+        "nome": "Audiência Pública",
+        "descricao": "Participação popular"
+    }
+]

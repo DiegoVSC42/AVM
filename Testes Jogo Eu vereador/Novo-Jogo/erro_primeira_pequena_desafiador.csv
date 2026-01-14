@@ -1,0 +1,14 @@
+Tipo de candidatura,Primeira Candidatura
+Tamanho da cidade,Cidade Pequena
+Dificuldade,Desafiador
+Screenshot,erro_primeira_pequena_desafiador.png
+Relatório,erro_primeira_pequena_desafiador.md
+
+Parâmetro,Valor Esperado,Valor Obtido,Status
+Votos Iniciais,0,0,✅ OK
+Meta de Votos,300,400,❌ ERRO
+Contatos Iniciais,0,0,✅ OK
+Meta de Contatos,60,80,❌ ERRO
+Energia,100%,100%,✅ OK
+Reputação,50%,50%,✅ OK
+Saldo,R$ 3.500,R$ 10.000,❌ ERRO

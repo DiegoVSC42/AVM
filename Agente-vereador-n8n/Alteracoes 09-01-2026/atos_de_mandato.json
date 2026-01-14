@@ -1,0 +1,621 @@
+{
+    "MOBILIZAÇÃO SOCIAL": {
+        "explicacao": {
+            "definicao": "Ação prática do mandato que envolve a comunidade em iniciativas coletivas como mutirões, campanhas de arrecadação, ações de voluntariado ou apoio social.",
+            "contexto_e_importancia": "A mobilização social é uma das formas mais poderosas de fortalecer a conexão entre o vereador e a comunidade. Diferente de atos que acontecem dentro da Câmara ou em reuniões fechadas, a mobilização coloca o mandato lado a lado com as pessoas, trabalhando junto em prol de uma causa comum. Esse tipo de ação demonstra que o vereador não está apenas cobrando ou fiscalizando, mas também fazendo acontecer. É a política de mãos dadas com a comunidade. Uma campanha do agasalho, um mutirão de limpeza em praça abandonada ou uma ação de arrecadação de alimentos são exemplos que geram identificação imediata com o eleitor. Do ponto de vista da comunicação, a mobilização social rende conteúdo em três momentos: antes (convocação e chamamento), durante (registro da ação acontecendo) e depois (prestação de contas do que foi arrecadado ou realizado). Isso permite criar uma narrativa completa que mostra planejamento, execução e resultado. A mobilização também funciona como um termômetro da capacidade de articulação do mandato. Um vereador que consegue reunir voluntários, parceiros e doadores demonstra liderança prática, não apenas discurso.",
+            "exemplos_praticos": "• Campanha do agasalho organizada pelo gabinete com pontos de coleta nos bairros • Mutirão de limpeza em praça pública com moradores e voluntários • Arrecadação de brinquedos para o Dia das Crianças em parceria com igrejas • Ação de plantio de árvores com estudantes de escolas municipais • Campanha de doação de sangue em parceria com hemocentro"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Qual é a finalidade da ação?",
+                "placeholder": "ex.: arrecadar alimentos, coletar lixo, distribuir roupas, organizar mutirão de limpeza"
+            },
+            {
+                "pergunta": "Qual o prazo?",
+                "placeholder": "ex.: uma semana, quinze dias, até o fim do mês"
+            },
+            {
+                "pergunta": "Quando a ação irá ocorrer? Qual a data?",
+                "placeholder": "ex.: 12/05, último sábado do mês"
+            },
+            {
+                "pergunta": "Por que a ação é importante?",
+                "placeholder": "ex.: reduzir um problema do bairro, ajudar famílias em dificuldade, incentivar participação da comunidade, melhorar um espaço público"
+            },
+            {
+                "pergunta": "Qual problema a ação resolve ou qual solução a ação melhora?",
+                "placeholder": "ex.: lixo acumulado, falta de alimentos, baixa participação social, espaço degradado"
+            },
+            {
+                "pergunta": "Quem são os públicos dessa ação?",
+                "placeholder": "ex.: famílias de baixa renda, crianças, moradores do bairro, voluntários"
+            },
+            {
+                "pergunta": "O que uma pessoa precisa fazer para participar ou se engajar na ação?",
+                "placeholder": "ex.: doar, comparecer ao ponto de apoio, levar materiais, compartilhar a ação"
+            },
+            {
+                "pergunta": "Onde será realizada essa ação?",
+                "placeholder": "ex.: praça central, bairro X, sede da associação"
+            },
+            {
+                "pergunta": "Por que você resolveu fazer ou participar da ação?",
+                "placeholder": "ex.: demanda da comunidade, necessidade observada, alinhamento com uma bandeira do mandato"
+            },
+            {
+                "pergunta": "Quem está organizando essa ação?",
+                "placeholder": "ex.: vereador, ONG, associação, igreja, grupo de voluntários"
+            },
+            {
+                "pergunta": "Essa ação possui algum site ou telefone para contato?",
+                "placeholder": "ex.: número do gabinete, contato da ONG, página da ação"
+            },
+            {
+                "pergunta": "Há parceiros envolvidos na ação?",
+                "placeholder": "ex.: escolas, igrejas, empresas, associações"
+            },
+            {
+                "pergunta": "Existe algum material que será distribuído ou coletado?",
+                "placeholder": "ex.: alimentos, roupas, brinquedos, folhetos"
+            },
+            {
+                "pergunta": "Há expectativa de quantas pessoas devem participar?",
+                "placeholder": "ex.: cerca de 50 moradores, voluntários do bairro"
+            }
+        ]
+    },
+    "REQUERIMENTO AO EXECUTIVO": {
+        "explicacao": {
+            "definicao": "Solicitação formal enviada pelo vereador ao Poder Executivo (Prefeitura) para obter informações, pedir providências ou abrir uma demanda específica.",
+            "contexto_e_importancia": "O requerimento é uma das ferramentas mais utilizadas pelo vereador no dia a dia. É por meio dele que o parlamentar formaliza pedidos à Prefeitura, seja para cobrar uma ação, solicitar esclarecimentos ou encaminhar demandas da população. Diferente de uma simples reclamação ou pedido informal, o requerimento tem força institucional. Quando um vereador protocola um requerimento, a Prefeitura é obrigada a responder dentro de um prazo legal. Isso transforma o vereador em um canal oficial entre o cidadão e o poder público. Na comunicação, o requerimento serve para mostrar que o vereador está agindo de forma concreta. Não basta dizer que \\\"vai cobrar\\\" --- o requerimento é a prova de que a cobrança foi feita de maneira formal e documentada. Isso gera credibilidade. O requerimento pode nascer de diversas fontes: um morador que procurou o gabinete com um problema, uma fiscalização que identificou irregularidades, uma demanda coletiva de um bairro ou até mesmo uma matéria de jornal que revelou uma situação preocupante. Em todos os casos, ele formaliza a ação do mandato. É importante destacar que o requerimento pode fazer parte de uma ação de fiscalização maior, mas nem toda fiscalização resulta em requerimento. São atos complementares, mas distintos.",
+            "exemplos_praticos": "• Requerimento pedindo informações sobre atraso em obra de escola • Solicitação de recapeamento em rua com buracos • Pedido de esclarecimentos sobre contrato de empresa terceirizada • Requerimento cobrando instalação de semáforo em cruzamento perigoso • Solicitação de poda de árvores em bairro específico"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Para quem será o requerimento?",
+                "placeholder": "ex.: Prefeitura, secretário, presidência da Câmara"
+            },
+            {
+                "pergunta": "Qual é a finalidade desse requerimento? O que você pretende solicitar?",
+                "placeholder": "ex.: pedir informações, solicitar ação do Executivo, abrir pauta, requisitar dados para comissão"
+            },
+            {
+                "pergunta": "Existe algum público impactado por esse requerimento?",
+                "placeholder": "ex.: moradores de um bairro, alunos, pacientes, servidores"
+            },
+            {
+                "pergunta": "O requerimento já foi feito ou ainda será feito?",
+                "placeholder": "ex.: já protocolado, será enviado na próxima sessão"
+            },
+            {
+                "pergunta": "Qual é o tema central do requerimento?",
+                "placeholder": "ex.: transporte, saúde, educação, obras"
+            },
+            {
+                "pergunta": "Que problema motivou o requerimento?",
+                "placeholder": "ex.: falta de manutenção, demora em respostas, dúvida sobre gastos públicos"
+            },
+            {
+                "pergunta": "Qual resultado você espera obter com esse requerimento?",
+                "placeholder": "ex.: esclarecimento, solução prática, resposta formal do órgão"
+            }
+        ]
+    },
+    "FISCALIZAÇÃO": {
+        "explicacao": {
+            "definicao": "Acompanhamento presencial de serviços, equipamentos, obras ou ações da Prefeitura para verificar se estão funcionando corretamente ou se precisam de providências.",
+            "contexto_e_importancia": "A fiscalização é considerada a função mais forte do vereador. Enquanto a capacidade de legislar é limitada por diversas regras constitucionais, o poder de fiscalizar é amplo e direto. O vereador pode ir a qualquer equipamento público, solicitar informações, convocar secretários e até criar Comissões Parlamentares de Inquérito. Na prática, fiscalizar significa ir a campo verificar se os serviços públicos estão sendo entregues como deveriam. É o vereador no posto de saúde conferindo se há médicos atendendo, na obra verificando se o cronograma está sendo cumprido, no transporte público checando as condições dos ônibus. Do ponto de vista da comunicação, a fiscalização gera um dos conteúdos mais poderosos: o vereador em ação, no local do problema, mostrando com imagens o que está errado ou o que melhorou. Diferente de um discurso na tribuna, a fiscalização é prova visual e concreta. A fiscalização pode ser rotineira (acompanhamento regular de uma área) ou pontual (resposta a uma denúncia ou problema específico). Pode ser feita pelo vereador sozinho, com sua equipe, com moradores ou até com a imprensa acompanhando. É importante que a fiscalização tenha desdobramentos. Não basta ir ao local e filmar --- o vereador precisa mostrar o que fará com aquela informação: protocolar requerimento, cobrar na tribuna, acionar o Ministério Público. Fiscalização sem consequência é apenas passeio.",
+            "exemplos_praticos": "• Vistoria em posto de saúde para verificar atendimento médico • Visita a obra parada para cobrar retomada • Fiscalização de ônibus do transporte público • Verificação de merenda escolar em creches municipais • Inspeção em ponte ou viaduto com problemas estruturais"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Você foi ou irá fiscalizar algo?",
+                "placeholder": "ex.: já realizada, agendada para os próximos dias"
+            },
+            {
+                "pergunta": "Qual é o objeto da fiscalização?",
+                "placeholder": "ex.: serviço público, aparelho, obra, ação da prefeitura em um bairro"
+            },
+            {
+                "pergunta": "Qual a origem dessa fiscalização?",
+                "placeholder": "ex.: pedido de moradores, demanda do gabinete, matéria jornalística, visita de rotina"
+            },
+            {
+                "pergunta": "A quem interessa a fiscalização? Quem é o maior beneficiado?",
+                "placeholder": "ex.: moradores de uma região, profissionais, servidores, grupos com determinada visão ou ideologia"
+            },
+            {
+                "pergunta": "Qual é o resultado prático da fiscalização?",
+                "placeholder": "ex.: prefeitura irá tomar providências, mudança imediata, impacto na mídia, início de uma discussão pública"
+            },
+            {
+                "pergunta": "Existem outras fiscalizações programadas?",
+                "placeholder": "ex.: sim, nova vistoria no mesmo local, outras áreas em análise"
+            },
+            {
+                "pergunta": "Você costuma fazer fiscalizações ou seria um ato único?",
+                "placeholder": "ex.: fiscalização frequente, situação pontual"
+            },
+            {
+                "pergunta": "A fiscalização contou com alguém acompanhando?",
+                "placeholder": "ex.: equipe do gabinete, moradores, representantes de algum setor"
+            }
+        ]
+    },
+    "DISCURSO DE TRIBUNA": {
+        "explicacao": {
+            "definicao": "Momento em que o vereador apresenta sua posição, provoca debate ou faz um registro político perante a Câmara e a comunidade, usando a tribuna oficial do plenário.",
+            "contexto_e_importancia": "A tribuna é o espaço sagrado do parlamentar. É ali, de pé, diante dos colegas e das câmeras, que o vereador faz seus pronunciamentos oficiais. O discurso de tribuna tem peso institucional --- fica registrado em ata, pode ser transmitido ao vivo e gera material para a comunicação. Um bom discurso de tribuna serve a vários propósitos: marcar posição sobre um tema, provocar o prefeito ou secretários, defender uma causa, homenagear alguém, se defender de acusações ou criar \\\"cortes\\\" para as redes sociais. Os melhores vereadores sabem usar esse espaço de forma estratégica. Na era das redes sociais, o discurso de tribuna ganhou nova importância. Um trecho de 30 segundos bem construído pode viralizar e alcançar muito mais pessoas do que o plenário físico permite. Por isso, o discurso precisa ser pensado também para funcionar em formato de vídeo curto. As características de um bom discurso de tribuna incluem: linguagem oral (não é texto para ser lido), frases curtas e marcantes, tom adequado ao objetivo (pode ser firme, indignado, emocionado ou conciliador), e uma mensagem clara que o público consiga entender em poucos segundos. O discurso de tribuna pode conter um posicionamento ideológico, mas são coisas diferentes. O posicionamento ideológico pode aparecer em vários lugares --- redes sociais, entrevistas, notas. O discurso de tribuna é exclusivamente o pronunciamento feito no plenário da Câmara.",
+            "exemplos_praticos": "• Discurso cobrando a Prefeitura por falta de médicos nos postos de saúde • Pronunciamento em homenagem ao Dia do Professor • Fala defendendo projeto de lei de sua autoria • Discurso se posicionando contra aumento de impostos • Pronunciamento em defesa de categoria profissional atacada"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Qual é o objetivo do seu discurso na tribuna?",
+                "placeholder": "ex.: estimular ação do prefeito, deixar clara sua posição, gerar corte para redes sociais, provocar discussão, defender-se, registrar apreço, se posicionar contra um projeto"
+            },
+            {
+                "pergunta": "Gostaria de citar alguém no discurso? Quem seria?",
+                "placeholder": "ex.: prefeito, secretário, liderança comunitária, servidores, moradores"
+            },
+            {
+                "pergunta": "Para quem esse discurso é importante?",
+                "placeholder": "ex.: aliados, gestão municipal, moradores de um bairro, pessoas atendidas por uma unidade da prefeitura"
+            },
+            {
+                "pergunta": "Qual foi o tema central do seu discurso?",
+                "placeholder": "ex.: saúde, educação, transporte, obras, segurança"
+            },
+            {
+                "pergunta": "O discurso reagiu a algum fato específico?",
+                "placeholder": "ex.: denúncia, votação próxima, fala de outro vereador"
+            }
+        ]
+    },
+    "PROJETO DE LEI": {
+        "explicacao": {
+            "definicao": "Proposta formal que cria, altera ou regulamenta regras no município, podendo impactar serviços, direitos ou funcionamento da gestão pública.",
+            "contexto_e_importancia": "O projeto de lei é a essência da função legislativa do vereador. É por meio dele que o parlamentar propõe mudanças nas regras da cidade, cria novos direitos, regulamenta serviços ou institui políticas públicas. É, em teoria, a função mais nobre do cargo. Na prática, porém, o vereador enfrenta severas limitações para legislar. A Constituição reserva ao prefeito a iniciativa exclusiva sobre temas que geram despesa ou tratam da organização administrativa. Isso significa que o vereador não pode criar cargos, aumentar salários de servidores, criar programas que custem dinheiro ou mexer na estrutura da prefeitura. Projetos que invadem essa área são declarados inconstitucionais. Por causa dessas amarras, muitos vereadores acabam se dedicando à chamada \\\"legislação simbólica\\\" --- leis que dão nomes a ruas, criam datas comemorativas ou instituem semanas de conscientização. Embora criticadas, essas leis têm sua função na organização da cidade. A comunicação de um projeto de lei pode acontecer em várias fases: quando o vereador está ouvindo a população para formatar a proposta, quando protocola o projeto, durante a tramitação nas comissões, na votação em plenário, após a aprovação e até em caso de veto do prefeito. Cada momento tem potencial comunicativo diferente. Um projeto bem comunicado mostra o vereador como alguém que pensa soluções, não apenas critica. Mesmo projetos que não são aprovados podem render boa comunicação se mostrarem que o vereador está tentando melhorar a cidade.",
+            "exemplos_praticos": "• Projeto que cria programa municipal de combate ao abandono de animais • Lei que institui semana de prevenção ao suicídio nas escolas • Projeto que regulamenta o funcionamento de feiras livres • Lei que cria o Dia Municipal do Empreendedor • Projeto que obriga instalação de fraldários em estabelecimentos"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Para quem será o projeto de lei?",
+                "placeholder": "ex.: Prefeitura, secretário, presidência da Câmara"
+            },
+            {
+                "pergunta": "Qual é a finalidade desse projeto?",
+                "placeholder": "ex.: garantir um serviço, criar regra, ampliar direito, melhorar organização municipal"
+            },
+            {
+                "pergunta": "Existe algum público impactado por esse projeto de lei?",
+                "placeholder": "ex.: estudantes, comerciantes, servidores, moradores de um bairro, idosos"
+            },
+            {
+                "pergunta": "O projeto de lei já foi feito ou ainda será feito?",
+                "placeholder": "ex.: elaborado, em rascunho, será protocolado"
+            },
+            {
+                "pergunta": "Qual é a origem do projeto de lei?",
+                "placeholder": "ex.: aliado, opositor, pessoa neutra, demanda da comunidade, sugestão técnica"
+            },
+            {
+                "pergunta": "De que forma você participou desse projeto de lei?",
+                "placeholder": "ex.: autor, coautor, relator, membro de comissão que analisou"
+            },
+            {
+                "pergunta": "Por que gostaria de divulgar esse projeto de lei?",
+                "placeholder": "ex.: por ser autor, por estar envolvido, por fazer parte da sua pauta"
+            },
+            {
+                "pergunta": "O projeto altera alguma lei já existente?",
+                "placeholder": "ex.: sim, atualiza pontos antigos, moderniza regras, corrige falhas"
+            },
+            {
+                "pergunta": "Há expectativa de impacto prático após aprovação?",
+                "placeholder": "ex.: melhora de serviço, benefício direto à população, economia para o município"
+            }
+        ]
+    },
+    "ATENDIMENTO À POPULAÇÃO": {
+        "explicacao": {
+            "definicao": "Momento em que o vereador ou sua equipe recebe cidadãos no gabinete para ouvir demandas, orientar sobre serviços ou encaminhar pedidos.",
+            "contexto_e_importancia": "O atendimento à população é o coração do mandato de vereador. É ali, no gabinete, que o parlamentar encontra as pessoas de verdade --- não estatísticas, não categorias, mas moradores com nome, história e problemas concretos. Dona Maria que precisa de uma cirurgia, Seu José que tem um buraco na frente de casa, a mãe que não consegue vaga na creche. Esse atendimento direto transforma o vereador em uma espécie de \\\"ouvidor do povo\\\". Muitas vezes, as demandas que chegam ao gabinete não são de competência do Legislativo, mas o vereador acaba funcionando como um facilitador --- orientando, encaminhando, fazendo a ponte com a Prefeitura. Os críticos chamam isso de \\\"vereador despachante\\\" e apontam que essa função desvia o parlamentar de suas atribuições principais (legislar e fiscalizar). Mas a realidade é que, em municípios onde os serviços públicos são precários, o atendimento no gabinete é muitas vezes a única forma de o cidadão comum ter acesso ao poder público. Na comunicação, o atendimento à população serve para mostrar que o vereador é acessível, que está de portas abertas, que se importa com as pessoas. É humanização do mandato. Mas é preciso cuidado: o atendimento não deve virar assistencialismo nem criar a impressão de que o vereador está \\\"fazendo favor\\\" --- ele está cumprindo sua função de representante. O diferencial entre \\\"Atendimento à População\\\" e \\\"Reunião\\\" está no público: atendimento é para cidadãos comuns que procuram o gabinete; reunião é encontro de trabalho com outros atores políticos, lideranças ou representantes de grupos.",
+            "exemplos_praticos": "• Morador trazendo reclamação sobre falta de iluminação na rua • Mãe pedindo ajuda para conseguir vaga em creche • Comerciante denunciando fiscalização abusiva • Idoso buscando orientação sobre benefício • Família pedindo apoio para tratamento de saúde"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Quando o atendimento foi feito?",
+                "placeholder": "ex.: data específica, dia da semana"
+            },
+            {
+                "pergunta": "Quem estava envolvido?",
+                "placeholder": "ex.: moradores, lideranças, profissionais, representantes comunitários"
+            },
+            {
+                "pergunta": "Essas pessoas representam algum grupo ou instituição?",
+                "placeholder": "ex.: associação de bairro, igreja, líderes religiosos, coletivo local"
+            },
+            {
+                "pergunta": "O que foi discutido nesse atendimento?",
+                "placeholder": "ex.: demanda do bairro, serviço que precisa melhorar, sugestão de projeto, reclamação específica"
+            },
+            {
+                "pergunta": "Por que é importante divulgar essa agenda?",
+                "placeholder": "ex.: transparência, mostrar diálogo, reforçar compromisso com o bairro ou setor"
+            },
+            {
+                "pergunta": "A quem interessa essa agenda?",
+                "placeholder": "ex.: moradores atendidos, servidores, grupos envolvidos, público afetado pelo tema"
+            },
+            {
+                "pergunta": "Qual é o resultado dessa agenda? Algo ficou decidido para ser feito?",
+                "placeholder": "ex.: encaminhamento, pedido ao Executivo, nova reunião, vistoria futura"
+            }
+        ]
+    },
+    "EVENTO": {
+        "explicacao": {
+            "definicao": "Atividade pública organizada ou apoiada pelo mandato, voltada para reunir pessoas, apresentar ações ou fortalecer vínculos com a comunidade.",
+            "contexto_e_importancia": "Eventos são momentos de encontro entre o mandato e a comunidade fora do ambiente formal da Câmara ou do gabinete. Podem ser festas, celebrações, lançamentos, encontros temáticos ou qualquer atividade que reúna pessoas em torno de uma causa ou comemoração. O evento é uma ferramenta poderosa de aproximação. Diferente de uma reunião de trabalho ou de um atendimento individual, o evento permite que o vereador seja visto por muitas pessoas ao mesmo tempo, em um ambiente mais descontraído e positivo. É política com música, comida, crianças brincando. Os eventos podem ser organizados pelo próprio mandato (como um lançamento de frente parlamentar ou uma confraternização de fim de ano) ou apoiados pelo vereador (como uma festa junina de associação de bairro ou um torneio esportivo de comunidade). Em ambos os casos, a presença do vereador deve ser registrada e comunicada. Na comunicação, eventos rendem fotos com público, registro de presença institucional, demonstração de capilaridade territorial (o vereador que está em todos os bairros) e conexão com diferentes grupos sociais. É conteúdo leve, que humaniza o mandato e quebra a imagem de \\\"político só de palanque\\\". É importante diferenciar evento de audiência pública. A audiência pública é um instrumento formal, geralmente realizado na Câmara, com rito definido e objetivo de ouvir a população sobre tema específico. O evento é mais amplo e informal, podendo acontecer em qualquer lugar.",
+            "exemplos_praticos": "• Festa junina organizada pelo mandato em parceria com associação de bairro • Lançamento de frente parlamentar em defesa dos animais • Torneio de futebol entre comunidades com apoio do gabinete • Encontro de mulheres empreendedoras • Ação de Natal com distribuição de brinquedos"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Quando será esse evento?",
+                "placeholder": "ex.: data, horário, dia da semana"
+            },
+            {
+                "pergunta": "A quem interessa esse evento?",
+                "placeholder": "ex.: moradores do bairro, jovens, idosos, profissionais, famílias"
+            },
+            {
+                "pergunta": "Quem está envolvido na organização?",
+                "placeholder": "ex.: gabinete, prefeitura, associação, parceiros locais"
+            },
+            {
+                "pergunta": "Gostaria de citar alguém na divulgação desse evento?",
+                "placeholder": "ex.: autoridades, lideranças, apoiadores, parceiros"
+            },
+            {
+                "pergunta": "Gostaria de citar algum fato relevante sobre esse evento?",
+                "placeholder": "ex.: primeira edição, tradição no bairro, tema especial, presença de serviços públicos"
+            },
+            {
+                "pergunta": "Onde o evento será realizado?",
+                "placeholder": "ex.: praça, escola, ginásio, sede comunitária"
+            },
+            {
+                "pergunta": "Qual é o objetivo central do evento?",
+                "placeholder": "ex.: confraternizar, informar, lançar projeto, promover serviço"
+            }
+        ]
+    },
+    "REUNIÃO": {
+        "explicacao": {
+            "definicao": "Encontro de trabalho para discutir temas do mandato, alinhar ações ou negociar com outros atores políticos, lideranças ou representantes de grupos e instituições.",
+            "contexto_e_importancia": "A reunião de trabalho é onde a política acontece nos bastidores. É na mesa de reunião que o vereador negocia com o secretário, alinha posição com outros parlamentares, ouve demandas de lideranças comunitárias ou planeja ações com sua equipe. Diferente do atendimento à população (que é para cidadãos comuns que procuram o gabinete), a reunião envolve atores com algum grau de representatividade ou poder: presidentes de associação, diretores de escola, secretários municipais, outros vereadores, representantes de sindicatos, empresários. Na comunicação, a reunião mostra que o vereador está articulando, trabalhando nos bastidores, construindo alianças e buscando soluções. É demonstração de que a política não é só discurso --- é também negociação, diálogo e construção de consensos. As reuniões podem acontecer no gabinete do vereador, na sede de uma associação, em secretarias municipais, em outros municípios ou até em Brasília. O local faz parte da narrativa: uma reunião em Brasília buscando recursos tem peso diferente de uma reunião no bairro ouvindo moradores. É importante comunicar reuniões com critério. Nem toda reunião merece virar post. As que merecem são aquelas que têm resultado concreto, envolvem temas relevantes para a população ou demonstram articulação importante do mandato.",
+            "exemplos_praticos": "• Reunião com secretário de Saúde para cobrar melhorias em UBS • Encontro com lideranças do bairro para ouvir demandas • Reunião com deputado estadual para buscar emendas • Alinhamento com outros vereadores sobre votação importante • Encontro com diretores de escolas sobre problemas na merenda"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Quando será essa reunião?",
+                "placeholder": "ex.: data, horário, dia da semana"
+            },
+            {
+                "pergunta": "A quem interessa essa reunião?",
+                "placeholder": "ex.: moradores, servidores, lideranças, grupos específicos"
+            },
+            {
+                "pergunta": "Quem está envolvido na organização?",
+                "placeholder": "ex.: gabinete, secretaria, associação, parceiros"
+            },
+            {
+                "pergunta": "Gostaria de citar alguém na divulgação dessa reunião?",
+                "placeholder": "ex.: autoridades, lideranças, convidados"
+            },
+            {
+                "pergunta": "Gostaria de citar algum fato relevante sobre essa reunião?",
+                "placeholder": "ex.: tema central, motivo do encontro, contexto importante"
+            },
+            {
+                "pergunta": "Qual é o objetivo principal da reunião?",
+                "placeholder": "ex.: resolver um problema, alinhar ação, ouvir demandas, apresentar propostas"
+            }
+        ]
+    },
+    "VIAGEM": {
+        "explicacao": {
+            "definicao": "Deslocamento feito pelo mandato para reuniões, visitas técnicas, capacitações ou participação em eventos relevantes fora do município.",
+            "contexto_e_importancia": "A viagem a trabalho é um tema sensível na comunicação política. Por um lado, é legítimo e muitas vezes necessário que o vereador saia da cidade para buscar recursos, participar de capacitações, conhecer experiências de outros municípios ou representar a Câmara em eventos. Por outro, existe uma desconfiança popular com \\\"político viajando às custas do contribuinte\\\". Por isso, a comunicação de viagens precisa ser muito bem feita. O vereador deve explicar claramente: para onde foi, por que foi, o que fez lá e qual benefício trouxe para a cidade. Viagem sem justificativa clara é munição para adversários e combustível para desconfiança. As viagens mais fáceis de comunicar são aquelas com resultado concreto: foi a Brasília e conseguiu emenda, foi a congresso e trouxe ideia que virou projeto, foi a outro município e conheceu programa que quer implantar na cidade. Viagens de capacitação também são bem aceitas quando o vereador mostra que está estudando para fazer um trabalho melhor. Viagens que fazem parte de comitivas oficiais da Câmara têm uma camada extra de legitimidade --- não foi decisão individual do vereador, mas missão institucional. Isso deve ser destacado na comunicação. O registro da viagem (fotos, vídeos, documentos) é fundamental. Não basta dizer que foi produtiva --- é preciso mostrar. O vereador em reunião com deputado federal, no plenário de congresso, visitando projeto modelo. Imagens que comprovam trabalho.",
+            "exemplos_praticos": "• Ida a Brasília para reunião com ministério buscando recursos • Participação em congresso nacional de vereadores • Visita técnica a projeto de outro município para conhecer modelo • Curso de capacitação sobre legislação municipal • Reunião na capital do estado com secretaria estadual"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Para onde foi ou será a viagem?",
+                "placeholder": "ex.: cidade, órgão público, instituição"
+            },
+            {
+                "pergunta": "O que motivou essa viagem?",
+                "placeholder": "ex.: reunião, visita técnica, evento, convite oficial"
+            },
+            {
+                "pergunta": "Qual benefício trouxe ou trará para o mandato ou para a cidade?",
+                "placeholder": "ex.: melhoria de projeto, solução de demanda, troca de experiências"
+            },
+            {
+                "pergunta": "Essa viagem faz parte de algo maior?",
+                "placeholder": "ex.: comitiva, agenda conjunta, reuniões periódicas"
+            },
+            {
+                "pergunta": "É uma viagem de capacitação?",
+                "placeholder": "ex.: curso, congresso, formação específica"
+            },
+            {
+                "pergunta": "Quantos dias passará ou passou fora?",
+                "placeholder": "ex.: 1 dia, 2 dias, viagem de fim de semana"
+            },
+            {
+                "pergunta": "Quem participou ou participará junto com você nessa viagem?",
+                "placeholder": "ex.: equipe do gabinete, outros vereadores, representantes do Executivo"
+            }
+        ]
+    },
+    "PRESTAÇÃO DE CONTAS": {
+        "explicacao": {
+            "definicao": "Resumo das ações, entregas e resultados do mandato em um período específico, demonstrando transparência e trabalho realizado.",
+            "contexto_e_importancia": "A prestação de contas é uma obrigação moral de todo representante eleito. O vereador recebe salário público, usa estrutura pública e foi escolhido pelo voto popular --- deve satisfação à sociedade sobre o que está fazendo com essa confiança. Mas a prestação de contas não pode ser uma lista burocrática de \\\"protocolou ofício\\\", \\\"participou de sessão\\\", \\\"votou projeto\\\". Esse tipo de linguagem não significa nada para o cidadão comum. A boa prestação de contas traduz as ações em resultados concretos: o que melhorou na vida das pessoas? O formato pode variar: balanço mensal de atividades, relatório semestral, retrospectiva de fim de ano, prestação de contas temática (tudo que foi feito na área de saúde, por exemplo). O importante é que seja regular, compreensível e honesto. Na comunicação, a prestação de contas serve para consolidar a imagem de trabalho. Enquanto os posts do dia a dia mostram ações isoladas, a prestação de contas conecta tudo em uma narrativa: \\\"veja quanto seu vereador trabalhou nesse período\\\". É demonstração de volume e consistência. A prestação de contas também antecipa críticas. Quando alguém disser que \\\"vereador não faz nada\\\", o parlamentar pode apontar para seu relatório público mostrando dezenas de ações. É blindagem reputacional construída com transparência.",
+            "exemplos_praticos": "• Balanço mensal com número de atendimentos, requerimentos e projetos • Relatório semestral mostrando principais conquistas • Retrospectiva de fim de ano com destaques do mandato • Prestação de contas temática sobre ações na área de educação • Informe dos 100 primeiros dias de mandato"
+        },
+        "perguntas": [
+            {
+                "pergunta": "O que você gostaria de informar nesta prestação de contas?",
+                "placeholder": "ex.: realizações do mandato, uso de recursos, ações concluídas, projetos em andamento, entregas para a comunidade"
+            },
+            {
+                "pergunta": "Quais atividades foram realizadas?",
+                "placeholder": "ex.: reuniões, eventos, atendimentos no gabinete, participação em comissões, ações em bairros"
+            },
+            {
+                "pergunta": "Esta prestação de contas se refere a qual período?",
+                "placeholder": "ex.: mês, trimestre, semestre"
+            },
+            {
+                "pergunta": "Quais são os principais públicos desta prestação de contas?",
+                "placeholder": "ex.: moradores, servidores, imprensa, lideranças, parceiros"
+            },
+            {
+                "pergunta": "Existe algum destaque que você gostaria de apresentar?",
+                "placeholder": "ex.: conquista importante, projeto aprovado, ação de grande impacto, economia gerada, atendimento expressivo, parceria relevante"
+            },
+            {
+                "pergunta": "Houve algum resultado concreto nesse período?",
+                "placeholder": "ex.: melhoria de serviço, solução de problema, avanço em obras, resposta do Executivo"
+            },
+            {
+                "pergunta": "Há algo previsto para o próximo período que merece ser mencionado?",
+                "placeholder": "ex.: agendas futuras, projetos em votação, ações programadas"
+            }
+        ]
+    },
+    "EMENDA PARLAMENTAR": {
+        "explicacao": {
+            "definicao": "Recursos indicados pelo vereador para melhorar serviços, fortalecer projetos ou atender demandas específicas da comunidade.",
+            "contexto_e_importancia": "A emenda parlamentar é a entrega mais concreta que um vereador pode fazer. Enquanto projetos de lei dependem de votação e requerimentos dependem da boa vontade da Prefeitura, a emenda é dinheiro --- recurso real que se transforma em obra, equipamento ou serviço. O modelo de emendas impositivas, que começou no nível federal, está se espalhando pelos municípios. Cada vez mais Câmaras estão aprovando em suas Leis Orgânicas a obrigatoriedade de execução das emendas de vereadores. Isso dá ao parlamentar uma garantia: os recursos que ele indicar serão, de fato, aplicados. A comunicação de emendas pode acontecer em três momentos: quando o vereador indica o recurso (mostrando para onde vai destinar), durante a execução (acompanhando a aplicação) e na entrega (mostrando o resultado final). Cada momento tem valor comunicativo. A indicação mostra as prioridades do mandato: \\\"decidi destinar para saúde porque é a maior demanda dos moradores\\\". A execução mostra acompanhamento: \\\"estou fiscalizando para garantir que o dinheiro seja bem aplicado\\\". A entrega mostra resultado: \\\"olha o equipamento novo funcionando no posto de saúde\\\". É importante que a comunicação de emendas seja equilibrada. O vereador deve mostrar que está entregando, mas sem parecer que está \\\"comprando\\\" apoio ou fazendo favor. A emenda é dinheiro público, não dinheiro do bolso do vereador --- ele está cumprindo sua função de direcionar recursos para as necessidades da população.",
+            "exemplos_praticos": "• Emenda de R\\$ 100 mil para comprar equipamentos para UBS • Recursos para reforma de quadra esportiva em bairro • Emenda para aquisição de veículo para APAE • Destinação para compra de instrumentos musicais para escola • Recursos para iluminação de praça pública"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Qual é o objetivo dessa destinação de emenda?",
+                "placeholder": "ex.: ampliar serviço, comprar equipamento, melhorar estrutura, apoiar projeto social"
+            },
+            {
+                "pergunta": "Quais são os valores destinados?",
+                "placeholder": "ex.: R\\$ 50 mil, R\\$ 200 mil, R\\$ 500 mil"
+            },
+            {
+                "pergunta": "Qual é a finalidade dessa destinação?",
+                "placeholder": "ex.: reforma, aquisição, manutenção, ampliação de atendimento"
+            },
+            {
+                "pergunta": "Essa destinação foi um pedido? De quem?",
+                "placeholder": "ex.: moradores, gabinete, associação, setor específico"
+            },
+            {
+                "pergunta": "Qual problema essa emenda resolve?",
+                "placeholder": "ex.: falta de equipamentos, estrutura antiga, baixa capacidade de atendimento"
+            },
+            {
+                "pergunta": "Quais são os públicos mais impactados?",
+                "placeholder": "ex.: estudantes, pacientes, atletas, idosos, moradores de um bairro"
+            },
+            {
+                "pergunta": "Qual é a previsão para a execução da emenda? Ou ela já foi executada?",
+                "placeholder": "ex.: em fase de pagamento, execução iniciada, concluída"
+            },
+            {
+                "pergunta": "Por que você resolveu destinar essa emenda?",
+                "placeholder": "ex.: demanda antiga, prioridade do mandato, impacto direto para a população"
+            },
+            {
+                "pergunta": "Por que essa emenda é importante?",
+                "placeholder": "ex.: melhora serviço, reduz problema, traz benefício direto, atende necessidade urgente"
+            },
+            {
+                "pergunta": "Essa emenda está vinculada a qual área?",
+                "placeholder": "ex.: saúde, educação, esporte, infraestrutura"
+            }
+        ]
+    },
+    "HONRARIA": {
+        "explicacao": {
+            "definicao": "Reconhecimento formal concedido pelo mandato para valorizar pessoas, grupos ou instituições que prestaram contribuições relevantes à comunidade.",
+            "contexto_e_importancia": "Honrarias são instrumentos de reconhecimento público. Títulos de cidadão honorário, medalhas de mérito, moções de aplausos, diplomas de reconhecimento --- todas essas são formas de o Poder Legislativo homenagear quem contribuiu para a cidade. Esse tipo de ato pode parecer menor comparado a projetos de lei ou fiscalizações, mas tem valor político significativo. A honraria cria um vínculo especial entre o vereador e o homenageado. É um gesto de apreço que fica registrado oficialmente e gera gratidão. As honrarias mais comuns são: título de cidadão (para pessoas de fora que prestaram serviços à cidade), moção de aplausos (reconhecimento a pessoas ou grupos por ações meritórias), moção de repúdio (manifestação contrária a atos ou declarações considerados inaceitáveis), medalha de mérito (distinção para profissionais ou cidadãos destacados). A moção de repúdio, embora não seja propriamente uma \\\"honraria\\\", segue o mesmo fluxo de proposição e votação. É a Câmara se posicionando institucionalmente contra algo --- um ato do governo federal, uma declaração polêmica, uma decisão judicial controversa. Na comunicação, as honrarias rendem fotos institucionais, aproximação com categorias profissionais (homenagear professores, enfermeiros, bombeiros) e demonstração de valores (reconhecer quem faz o bem). É política de gestos simbólicos, mas gestos que constroem pontes.",
+            "exemplos_praticos": "• Título de cidadão honorário para médico que atendeu a cidade por décadas • Moção de aplausos aos bombeiros por resgate heroico • Diploma de reconhecimento para professora destaque • Medalha de mérito para atleta que representou a cidade • Moção de repúdio a declarações preconceituosas de autoridade"
+        },
+        "perguntas": [
+            {
+                "pergunta": "A quem seria destinada essa honraria?",
+                "placeholder": "ex.: pessoa específica, grupo, instituição, profissional"
+            },
+            {
+                "pergunta": "Quem está concedendo essa honraria?",
+                "placeholder": "ex.: vereador, Câmara Municipal, comissão"
+            },
+            {
+                "pergunta": "Essa honraria seria destinada a uma única pessoa ou a um grupo?",
+                "placeholder": "ex.: individual, coletivo"
+            },
+            {
+                "pergunta": "Por que essa pessoa ou esse grupo está sendo honrado?",
+                "placeholder": "ex.: serviço prestado, contribuição comunitária, atuação destacada"
+            },
+            {
+                "pergunta": "Qual é a importância dessa honraria?",
+                "placeholder": "ex.: reconhecimento público, valorização do trabalho, registro oficial"
+            },
+            {
+                "pergunta": "Qual é a descrição dessa honraria?",
+                "placeholder": "ex.: diploma, medalha, título honorário"
+            },
+            {
+                "pergunta": "Qual é o nome dessa honraria?",
+                "placeholder": "ex.: título de cidadão, medalha de mérito, diploma de reconhecimento"
+            },
+            {
+                "pergunta": "Essa honraria está ligada a algum projeto, data ou causa específica?",
+                "placeholder": "ex.: mês temático, ação municipal, evento comemorativo"
+            }
+        ]
+    },
+    "POSICIONAMENTO IDEOLÓGICO": {
+        "explicacao": {
+            "definicao": "Manifestação pública para defender uma ideia, criticar ou apoiar algo com base em valores, princípios e convicções políticas.",
+            "contexto_e_importancia": "O posicionamento ideológico é a expressão da identidade política do vereador. É quando ele sai da neutralidade técnica e assume um lado em questões que dividem opiniões. Pode ser sobre temas de costumes (aborto, drogas, religião), de política econômica (impostos, privatizações, regulações) ou de conjuntura (apoio ou oposição a governos, partidos, figuras públicas). Todo político tem uma identidade ideológica --- seja ela mais à esquerda, mais à direita, mais liberal, mais conservadora. O eleitor geralmente vota em alguém que compartilha seus valores. O posicionamento ideológico serve para reforçar esse vínculo: \\\"eu penso como você pensa\\\". O risco do posicionamento ideológico é a polarização. Ao se posicionar claramente de um lado, o vereador pode afastar eleitores do outro. Por isso, muitos preferem evitar temas polêmicos. Mas essa estratégia também tem custo: pode parecer que o vereador não tem opinião, não tem coragem, não tem personalidade. O posicionamento pode aparecer em vários canais: nas redes sociais do vereador, em entrevistas para rádio e TV, em notas públicas, em discursos de tribuna. O formato muda, mas a essência é a mesma: o vereador dizendo o que pensa sobre um tema que não é consenso. É importante que o posicionamento seja consistente. Mudar de lado conforme a conveniência gera desconfiança. O eleitor aceita discordar do vereador em alguns temas, mas não aceita que ele seja incoerente ou oportunista.",
+            "exemplos_praticos": "• Nota nas redes sociais defendendo posição sobre tema nacional • Entrevista de rádio criticando política do governo federal • Posicionamento em defesa de pauta de costumes • Manifestação contra aumento de impostos municipais • Apoio público a candidato em eleição estadual ou federal"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Deseja divulgar uma crítica ou um apoio a algo ou alguém por razão ideológica?",
+                "placeholder": "ex.: defesa de um princípio, crítica a uma decisão, apoio a um grupo"
+            },
+            {
+                "pergunta": "Qual é o fato motivador deste posicionamento?",
+                "placeholder": "ex.: fala recente, projeto de lei, ação da gestão, acontecimento nacional"
+            },
+            {
+                "pergunta": "Qual tom você gostaria de usar neste posicionamento?",
+                "placeholder": "ex.: agressivo, firme, ameno, conciliador"
+            },
+            {
+                "pergunta": "Gostaria que esse posicionamento fosse mais propositivo ou combativo?",
+                "placeholder": "ex.: sugerindo caminhos, fazendo contraponto, reforçando oposição"
+            },
+            {
+                "pergunta": "Gostaria de citar alguém ou algo positiva ou negativamente?",
+                "placeholder": "ex.: gestor, vereador, grupo social, instituição, decisão judicial"
+            },
+            {
+                "pergunta": "Qual público deve ser mais impactado por esse posicionamento?",
+                "placeholder": "ex.: sua base, moradores, servidores, grupos alinhados ideologicamente"
+            }
+        ]
+    },
+    "COMISSÃO": {
+        "explicacao": {
+            "definicao": "Participação em grupos formais da Câmara criados para analisar temas, estudar propostas, acompanhar ações do município ou investigar irregularidades.",
+            "contexto_e_importancia": "As comissões são o motor do trabalho legislativo nos bastidores. É nas comissões que os projetos são analisados tecnicamente, que os temas complexos são estudados com profundidade e que investigações são conduzidas. O plenário vota, mas a comissão prepara. Existem diferentes tipos de comissões. As comissões permanentes acompanham áreas específicas ao longo de toda a legislatura (Comissão de Saúde, de Educação, de Finanças). As comissões especiais são criadas para estudar temas específicos por tempo determinado. As Comissões Parlamentares de Inquérito (CPIs) investigam irregularidades e têm poderes especiais. Participar de uma comissão dá ao vereador a oportunidade de se especializar em um tema e se tornar referência naquela área. O vereador que é presidente da Comissão de Saúde, por exemplo, é procurado sempre que o assunto é saúde --- pela imprensa, pela população, pelos colegas. Na comunicação, a comissão mostra trabalho técnico e de bastidores. Não é tão visível quanto um discurso de tribuna, mas demonstra seriedade e dedicação. O vereador pode comunicar: que foi eleito para uma comissão, que está conduzindo trabalhos, que entregou relatório, que fez vistoria, que convocou secretário para prestar esclarecimentos. CPIs merecem atenção especial na comunicação. São investigações com potencial de grande repercussão, mas que também carregam riscos. Uma CPI mal conduzida ou que não chega a conclusões concretas pode se voltar contra quem a propôs.",
+            "exemplos_praticos": "• Eleição para presidência da Comissão de Saúde • Relatório da Comissão de Educação sobre merenda escolar • CPI do Transporte investigando irregularidades em contratos • Vistoria da Comissão de Obras em construção paralisada • Audiência da Comissão de Finanças com secretário da Fazenda"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Para quem será a comissão?",
+                "placeholder": "ex.: Prefeitura, secretário, presidência da Câmara"
+            },
+            {
+                "pergunta": "Qual é a finalidade dessa comissão?",
+                "placeholder": "ex.: estudar um tema, acompanhar obra, analisar projeto, investigar situação"
+            },
+            {
+                "pergunta": "Existe algum público impactado por essa comissão? Se sim, quem seria?",
+                "placeholder": "ex.: moradores, servidores, estudantes, comerciantes"
+            },
+            {
+                "pergunta": "A comissão já foi criada ou ainda será formada?",
+                "placeholder": "ex.: já instituída, em formação, proposta em discussão"
+            },
+            {
+                "pergunta": "Qual é a origem da comissão?",
+                "placeholder": "ex.: aliado, opositor, pessoa neutra, demanda de moradores, iniciativa técnica"
+            },
+            {
+                "pergunta": "Por que gostaria de divulgar essa comissão?",
+                "placeholder": "ex.: por fazer parte, por ser autor da proposta, por ser tema relevante do mandato"
+            },
+            {
+                "pergunta": "Qual é o nome dessa comissão?",
+                "placeholder": "ex.: comissão especial, comissão de estudos, comissão temporária"
+            },
+            {
+                "pergunta": "Qual é o cargo que você exerce ou exercerá nessa comissão?",
+                "placeholder": "ex.: presidente, relator, membro"
+            },
+            {
+                "pergunta": "Qual fato relevante dessa comissão você deseja divulgar?",
+                "placeholder": "ex.: início dos trabalhos, entrega de relatório, vistoria realizada, tema sensível"
+            },
+            {
+                "pergunta": "A comissão tem prazo de funcionamento?",
+                "placeholder": "ex.: 30 dias, 60 dias, período indeterminado"
+            }
+        ]
+    },
+    "AUDIÊNCIA PÚBLICA": {
+        "explicacao": {
+            "definicao": "Instrumento formal de participação popular que permite à Câmara ouvir a comunidade sobre temas específicos antes de tomar decisões.",
+            "contexto_e_importancia": "A audiência pública é um dos instrumentos mais importantes de democracia participativa no nível municipal. É o momento em que o Poder Legislativo abre suas portas para ouvir, de forma organizada, o que a população tem a dizer sobre determinado tema. Diferente de uma reunião comum ou de um evento, a audiência pública tem rito formal. É convocada oficialmente, tem pauta definida, permite inscrição de cidadãos para falar, gera ata e pode influenciar diretamente na votação de projetos. É a população participando do processo legislativo. As audiências públicas podem ser obrigatórias (exigidas por lei para certos temas, como orçamento municipal) ou facultativas (convocadas por iniciativa de vereadores ou comissões). Podem tratar de projetos em tramitação, políticas públicas, problemas da cidade ou qualquer tema de interesse coletivo. Na comunicação, a audiência pública mostra que o vereador valoriza a participação popular. Ele não decide sozinho --- escuta antes. Isso fortalece a legitimidade das posições que vai tomar. A audiência também gera conteúdo rico: depoimentos de cidadãos, debate de ideias, registro de demandas. A convocação da audiência já é comunicável (convite para a população participar). O durante também (transmissão ao vivo, registro das falas). E o depois também (resultado da audiência, compromissos assumidos, próximos passos). É um ato com alto potencial de comunicação em múltiplos momentos.",
+            "exemplos_praticos": "• Audiência pública sobre o Plano Diretor da cidade • Audiência para discutir situação do transporte público • Audiência sobre orçamento municipal para o próximo ano • Audiência pública sobre segurança nos bairros • Audiência para ouvir comunidade sobre fechamento de escola"
+        },
+        "perguntas": [
+            {
+                "pergunta": "Quando será essa audiência pública?",
+                "placeholder": "ex.: data, horário"
+            },
+            {
+                "pergunta": "Qual é o tema central da audiência?",
+                "placeholder": "ex.: transporte, saúde, orçamento, plano diretor"
+            },
+            {
+                "pergunta": "Quem convocou a audiência?",
+                "placeholder": "ex.: você, outro vereador, comissão, presidência da Câmara"
+            },
+            {
+                "pergunta": "Qual é o seu papel nessa audiência?",
+                "placeholder": "ex.: autor da convocação, participante, mediador"
+            },
+            {
+                "pergunta": "A quem interessa essa audiência?",
+                "placeholder": "ex.: moradores de bairro específico, categoria profissional, toda a cidade"
+            },
+            {
+                "pergunta": "Existe algum projeto de lei ou decisão que depende dessa audiência?",
+                "placeholder": "ex.: votação de projeto, elaboração de política pública"
+            },
+            {
+                "pergunta": "Onde será realizada?",
+                "placeholder": "ex.: plenário da Câmara, auditório, espaço no bairro"
+            },
+            {
+                "pergunta": "O que você espera como resultado dessa audiência?",
+                "placeholder": "ex.: ouvir demandas, colher sugestões, legitimar decisão"
+            },
+            {
+                "pergunta": "A população poderá se inscrever para falar? Como?",
+                "placeholder": "ex.: inscrição prévia, inscrição no local, tempo limitado"
+            },
+            {
+                "pergunta": "A audiência será transmitida ao vivo? Por qual canal?",
+                "placeholder": "ex.: YouTube da Câmara, redes sociais do mandato"
+            }
+        ]
+    }
+}

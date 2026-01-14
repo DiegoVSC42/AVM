@@ -1,0 +1,38 @@
+[
+    {
+        "canal": "Post",
+        "descricao": "Instagram/Facebook"
+    },
+    {
+        "canal": "Reels",
+        "descricao": "Vídeos curtos"
+    },
+    {
+        "canal": "Stories",
+        "descricao": "Conteúdo temporário"
+    },
+    {
+        "canal": "TikTok",
+        "descricao": "Vídeos criativos"
+    },
+    {
+        "canal": "Carrossel",
+        "descricao": "Múltiplas imagens"
+    },
+    {
+        "canal": "Site",
+        "descricao": "Site institucional"
+    },
+    {
+        "canal": "YouTube",
+        "descricao": "Vídeos longos"
+    },
+    {
+        "canal": "LinkedIn",
+        "descricao": "Rede profissional"
+    },
+    {
+        "canal": "Quiz",
+        "descricao": "Enquetes e perguntas"
+    }
+]

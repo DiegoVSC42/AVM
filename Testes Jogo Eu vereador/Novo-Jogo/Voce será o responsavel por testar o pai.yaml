@@ -1,0 +1,58 @@
+Voce será o responsavel por testar o painel de criação de um novo jogo
+https://jogo.euvereador.com.br/novo-jogo
+
+esse painel consiste em 3 opcoes para o modo de jogo 
+
+Tipo de candidatura que consiste em primeira candidatura e reeleicao 
+    Em reeleicao, aparece um formulario para preenchimento da quantidade de votos da ultima eleicao, 30% desse valor deve ser adicionado ao contador de votos ao iniciar o jogo , por exemplo se a pessoa colocar no formulario 30000 votos, ela deve iniciar o jogo com um extra de 9000 votos
+
+Tamanho da cidade, que consiste em 4 valores
+    CIdade pequena: ate 30 mil eleitores
+    Cidade Media: 30 a 100 mil eleitores
+    Cidade Grande: 100 a 500 mil eleitores
+    Metrópole: acima de 500 mil eleitores
+
+Niveis de dificuldade, que consistem em 3
+    Iniciande (fácil) : +30%recursos, -20% custos, +70% chance de eventos positivos
+    Desafiador (médio): Valores base do jogo, 50% dos eventos positivos/negativos, ou seja, metade metade
+    Veterano (dificil): -30%recursos, +20% custos, 70% chance de eventos negativos
+
+Seu objetivo é escolher as 3 etapas e testar se o jogo está iniciando conforme o esperado
+
+
+Por exemplo ao escolher, Primeira candidatura, cidade pequena e desafiador e iniciar a campanha, o jogo deve iniciar com os valores padrão, 
+para ver os valores inicie a fase 1
+
+sao 5 parametros que temos no jogo:
+
+votos   
+    é o valor para se ganhar o jogo, ele possui uma meta que equivale a 2% da média do tamanho da cidade, por exemplo para cidade media seria (30 a 100 mil) tirando a media da 65000, entao a meta seria 2% disso que equivale a 1300 votos
+    esse valor é sempre iniciado zerado em primeira candidatura
+contatos
+    é outro valor utilizado como métrica para vencer o jogo, ele possui uma meta que equivale a 20% da meta de votos
+    esse valor é sempre iniciado zerado em qualquer candidatura
+    o valor inicial para reeleição deve ser o mesmo de votos
+energia
+    deve iniciar sempre em 100%
+reputação
+    deve iniciar sempre em 50%
+saldo
+    depende do tamanho da cidade
+    pequena:
+        teto: 35000
+        1 campanha (10%): 3500
+        reeleicao (60%): 21000
+    media:
+        teto: 115000
+        1 campanha (10%): 11500
+        reeleicao (60%): 69000
+    grande:
+        teto: 500000
+        1 campanha (10%): 50000
+        reeleicao (60%): 300000
+    metropole:
+        teto: 1000000
+        1 campanha (10%): 100000
+        reeleicao (60%): 600000
+
+Voce deve verificar se os valores que aparecem na https://jogo.euvereador.com.br/jogo corresponde aos valores escolhidos ao iniciar o novo jogo, caso nao corresponda, voce deve informar o erro, salvando print na sua pasta e criando uma planilha com o passo a passo escolhido e o erro encontrado

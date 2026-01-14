@@ -1,0 +1,1 @@
+Os arquivos da pasta prompts não podem ser modificados por você. Eu tomarei conta deles.

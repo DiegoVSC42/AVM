@@ -1,0 +1,11 @@
+questão,opcao escolhida,social,liberal,conservador,totalSocial,totalLiberal,totalConservador
+1,Concordo Totalmente,2,-2,1,2,-2,1
+2,Concordo Totalmente,2,-2,0,4,-4,1
+3,Concordo Totalmente,-1,-2,2,3,-6,3
+4,Concordo Totalmente,-2,2,0,1,-4,3
+5,Concordo Totalmente,1,2,-2,2,-2,1
+6,Concordo Totalmente,2,-2,0,4,-4,1
+7,Concordo Totalmente,-1,-2,2,3,-6,3
+8,Concordo Totalmente,-2,2,0,1,-4,3
+9,Concordo Totalmente,1,2,-2,2,-2,1
+10,Concordo Totalmente,1,2,-2,3,0,-1
