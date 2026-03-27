@@ -1,0 +1,5 @@
+cd .\EuVereadorAI-server\
+npm run build
+cd..
+scp -i "id_rsa_euvereador " -P 2244 -r EuVereadorAI-server/dist/* ueuvereuser@159.203.175.56:/home/ueuvereuser/apps/euvereador/backend/dist/
+ssh -i "id_rsa_euvereador " -p 2244 ueuvereuser@159.203.175.56 "source ~/.nvm/nvm.sh && pm2 restart euvereador-backend"

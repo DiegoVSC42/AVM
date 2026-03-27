@@ -1,0 +1,10 @@
+{
+  "name": "eu-vereador-ia",
+  "scripts": {
+    "dev": "npx kill-port 5000 && concurrently --names \"SERVER,CLIENT\" --prefix-colors \"blue,green\" \"cd EuVereadorAI-server && npm run dev\" \"cd EuVereadorAI-client && npm run dev\"",
+    "deploy:backend": "powershell -ExecutionPolicy Bypass -File ./backend-deploy.ps1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

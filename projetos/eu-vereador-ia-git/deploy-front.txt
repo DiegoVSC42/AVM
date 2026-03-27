@@ -1,0 +1,6 @@
+cd .\EuVereadorAI-client\
+npm run build
+cd ..
+ssh -i "id_rsa_euvereador " -p 2244 ueuvereuser@159.203.175.56 "rm -rf /home/ueuvereuser/apps/euvereador/client/dist/*"
+scp -i "id_rsa_euvereador " -P 2244 -r EuVereadorAI-client/dist/* ueuvereuser@159.203.175.56:/home/ueuvereuser/apps/euvereador/client/dist/
+ssh -i "id_rsa_euvereador " -p 2244 ueuvereuser@159.203.175.56 "source ~/.nvm/nvm.sh && pm2 restart euvereador-client"
