@@ -1,0 +1,27 @@
+*Relatório Diário - 30/03/2026*
+
+*Liga Voz:*
+
+    *Concluído:*
+
+* Criei um sistema que permite testar uma voz específica com uma frase personalizada, possibilitando avaliar e comparar as opções disponíveis antes de aplicá-las nas campanhas.
+* Aperfeiçoei o relatório em PDF gerado ao final de cada batch de ligações, consolidando todos os dados de detalhamento das chamadas em um único documento organizado, facilitando a análise dos resultados por campanha.
+
+    *Em andamento:*
+
+* Estou testando diferentes modelos de inteligência artificial no sistema para resolver os problemas de instabilidade identificados durante as ligações simultâneas, variando as combinações para identificar qual delas apresenta o melhor desempenho.
+* Iniciei várias ligações simultâneas para avaliar o sistema, que apresentou instabilidade durante a execução em paralelo, com dificuldades em responder às chamadas. A investigação da causa segue em andamento.
+* Estou aprimorando o sistema de voz utilizando os agentes que serão aplicados nas campanhas dos vereadores, com o objetivo de validar e refinar o comportamento em cenários reais de ligação, garantindo que estejam prontos para uso nas operações com os clientes.
+* Realizei um teste com várias ligações simultâneas e o sistema apresentou melhorias significativas: as conversas ficaram mais fluidas e as respostas mais rápidas. No entanto, ainda há inconsistências a corrigir, pois em alguns momentos o sistema repete a mesma frase durante a chamada.
+
+    *Pendente:*
+
+* Criar automações para salvar automaticamente os dados das conversas no Google Drive e para enviar informações via WhatsApp.
+* Planejar versão em que o cliente contrata um pacote, sobe a própria base de contatos, configura o robô e dispara as ligações sem depender da equipe.
+* Permitir que um projeto receba mais de uma lista de contatos, com os dados consolidados por projeto e também separados por batch.
+
+*Pesquisas:*
+
+    *Em andamento:*
+
+* Estou avaliando alternativas de modelos de inteligência artificial para tornar a interação por voz mais natural. O PersonaPlex foi descartado por funcionar apenas em inglês, e estou comparando diferentes opções, tanto para execução local quanto via serviços externos.

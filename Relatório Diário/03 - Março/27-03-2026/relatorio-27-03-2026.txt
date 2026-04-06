@@ -1,0 +1,26 @@
+*Relatório Diário - 27/03/2026*
+
+*Eu Vereador IA:*
+
+    *Concluído:*
+
+* Corrigi um problema que impedia o cadastro de usuários cujo telefone possuía o código de área 55. O sistema rejeitava esses números durante o processo de registro, impossibilitando a conclusão do cadastro. A validação foi ajustada para aceitar corretamente todos os códigos de área válidos.
+* Transferi toda a lógica de recuperação de conta via WhatsApp para utilizar a Evolution API no lugar do Twilio. O fluxo de envio de mensagens de verificação e confirmação de identidade agora passa pela nova integração, removendo a dependência anterior do Twilio para essa funcionalidade.
+
+*Liga Voz:*
+
+    *Concluído:*
+
+* Corrigi uma pausa de 5 segundos que ocorria entre frases durante as chamadas de voz. As frases eram enviadas uma por uma para o sintetizador, causando silêncio entre elas. Agora o sistema agrupa as frases antes de enviar, tornando a fala contínua e natural.
+* Refinei o relatório em PDF gerado após as campanhas de chamadas. Agora inclui um resumo geral sobre todas as chamadas da batch, além de exibir a transcrição completa da conversa junto com o resumo individual de cada chamada, proporcionando uma visão mais completa dos resultados.
+
+    *Em andamento:*
+
+* Iniciei várias ligações simultâneas para avaliação do sistema. O sistema apresentou problemas em respondê-las, mostrando-se instável durante a execução em paralelo. Estou investigando a causa da instabilidade.
+* Estou aprimorando o sistema de voz utilizando os agentes que serão aplicados nas campanhas dos vereadores. O objetivo é validar e refinar o comportamento dos agentes em cenários reais de ligação, garantindo que estejam prontos para uso nas operações com os clientes.
+
+    *Pendente:*
+
+* Planejar versão self-service onde o cliente entra, contrata um pacote, sobe a própria base, configura o robô e dispara as ligações sem depender da equipe.
+* Permitir que um projeto receba mais de uma lista de contatos. Os dados ficam consolidados por projeto e também separados por batch.
+* Criar uma funcionalidade que gere uma planilha consolidando todas as batches de ligações relacionadas a um projeto, com o objetivo de ter uma visão unificada dos resultados de todas as campanhas em um único arquivo.
